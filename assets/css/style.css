@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/******  Begin header styles ******/
+
+.header {
+    height: auto;
+    background-color: white;
+    /* border-bottom: 1px solid black;*/
+    text-align: center;
+}
+
+.header__nav {
+    display: inline-block;
+}
+
+.header__nav a {
+    display: inline-block;
+    height: 50px;
+}
+
+header figure {
+    display: inline-block;
+}
+
+.header__nav__menu {
+    display: inline-block;
+    padding-left: 50px;
+}
+
+.header__nav__menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.header img {
+    height: 50px;
+    margin-left: 20px;
+}
+
+/*  Button get a demo */
+.btnAction {
+    background-color: grey;
+    color: white;
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/****** End header styles******/
+
+
+/****** Begin index principal section styles ******/
+
+.sectionColor {
+    background-color: lightgray;
+    text-align: center;
+}
+
+.sectionContainer {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.sectionColor__sectionContainer__text {
+    display: inline-block;
+    width: 45%;
+}
+
+.sectionColor__sectionContainer__img {
+    display: inline-block;
+    width: 45%;
+}
+
+.sectionColor__sectionContainer__img img {
+    height: 400px;
+}
+
+/****** End index principal section  styles ******/
+
+/****** Begin index features  section styles ******/
+
+.sectionWhite {
+    margin-top: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.sectionWhite__sectionContainer__header p {
+    padding-top: 20px;
+}
+
+.sectionContainer__RowContainer__column {
+    display: inline-block;
+    text-align: center;
+}
+
+.sectionContainer__RowContainer img {
+    height: 100px;
+    padding: 20px 20px 0;
+}
+
+/****** End index features section  styles ******/
+
+/****** Begin index advantages  section styles ******/
+
+.sectionColorAdvantages {
+    background-color: lightgray;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sectionColor__sectionContainer__img--size {
+    display: inline-block;
+    width: 45%;
+}
+
+.sectionColor__sectionContainer__img--size img {
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.sectionColor__sectionContainer__text p {
+    text-align: center;
+    padding: 10px;
+}
+
+/****** End index advantages section  styles ******/
+
+
+/****** Begin index testimonials  section styles ******/
+
+.sectionWhite__testimonialsHeader h2 {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.testimonialsCarrousel {
+    display: inline-block;
+}
+
+.cardClient {
+    display: inline-block;
+    width: 500px;
+}
+
+.testimonialsCarrousel figure,
+p {
+    display: inline-block;
+    padding: 20px;
+
+}
+
+/****** End index testimonials section  styles ******/
+
+
+/****** Begin  implementation styles ******/
+
+.implementationH2 {
+    color: orange;
+    font-size: 40px;
+}
+
+.implementationH3 {
+    color: darkgrey;
+}
+
+.separation {
+    margin: 20px;
+}
+
+.separation img {
+    display: inline-block;
+    height: 300px;
+    width: 500px;
+}
+
+.cellSeparation {
+    text-align: center;
+    padding: 30px;
+}
+
+.cellSeparation p {
+    display: inline-block;
+    width: 300px;
+}
+
+.sectionLeft {
+    text-align: left;
+    margin: 20px;
+}
+
+.sectionLeft img {
+    height: 50px;
+    width: 50px;
+}
+
+.sectionLeft h3 {
+    display: inline-block;
+}
+
+.sectionLeft p {
+    display: inline-block;
+    width: 800px;
+    padding: 0;
+    padding-left: 20px;
+}
+
+.clientRow {
+    margin-top: 20px;
+}
+
+.clientRow figure {
+    display: inline;
+    margin: 50px;
+}
+
+.clientRow img {
+    height: 50px;
+}
+
+.contactHeading {
+    color: coral;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.contactForm {
+    display: inline-block;
+    border: 1px solid coral;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    margin: 20px;
+
+}
+
+.contactForm input, 
+textarea {
+    display: inline-block;
+    margin: 10px;
+}
+
+
+/****** Begin  footer  section styles ******/
+
+footer {
+    background-color: darkslategray;
+    color: white;
+    margin-top: 30px;
+
+}
+
+.contactContainer {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+
+.contactContainer img {
+    height: 60px;
+}
+
+.contactContainer h3 {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.contactContainer p {
+    display: block;
+    padding: 5px;
+}
+
+
+.socialContainer {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+
+.socialContainer figure {
+    display: inline;
+    margin: 5px;
+
+}
+
+.socialContainer h3 {
+    margin-bottom: 10px;
+}
+
+.newsContainer {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+
+.legalContainer {
+    text-align: center;
+    font-size: 12px;
+    padding: 20px 20px;
+}
+
+.legalContainer a {
+
+    text-decoration: none;
+    color: white;
+}
+
+/****** End footer section  styles ******/
