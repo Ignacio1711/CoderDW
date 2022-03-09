@@ -6,43 +6,58 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto 1fr auto;
 }
 
 /******  Begin header styles ******/
 
 .header {
-    height: auto;
+    grid-column: 1/6;
+    grid-row: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     background-color: white;
-    /* border-bottom: 1px solid black;*/
-    text-align: center;
 }
 
 .header__nav {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
 }
 
-.header__nav a {
-    display: inline-block;
+.headerContainer__logo {
+    display: flex;
+    justify-content: start;
+    width: 40%;
     height: 50px;
 }
 
-header figure {
-    display: inline-block;
+
+.headerContainer__logo img {
+    height: 50px;
 }
 
-.header__nav__menu {
-    display: inline-block;
-    padding-left: 50px;
+.headerContainer__menu {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.header__nav__menu a {
+.headerContainer__menu li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.headerContainer__menu a {
     text-decoration: none;
     color: black;
-}
-
-.header img {
-    height: 50px;
-    margin-left: 20px;
 }
 
 /*  Button get a demo */
@@ -56,83 +71,132 @@ header figure {
 
 /****** End header styles******/
 
+/****** Begin Main********/
+
+main {
+    grid-column: 1/6;
+    grid-row: 2;
+}
+
+/****** End Main******/
+
 
 /****** Begin index principal section styles ******/
 
-.sectionColor {
+.sectionPrincipal {
     background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sectionPrincipal__Container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sectionPrincipal__Container__text {
+    width: 50%;
+}
+
+.sectionPrincipal__Container__text h1 {
+    padding-bottom: 20px;
+}
+
+.sectionPrincipal__Container__img {
+    width: 50%;
     text-align: center;
 }
 
-.sectionContainer {
-    width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.sectionColor__sectionContainer__text {
-    display: inline-block;
-    width: 45%;
-}
-
-.sectionColor__sectionContainer__img {
-    display: inline-block;
-    width: 45%;
-}
-
-.sectionColor__sectionContainer__img img {
-    height: 400px;
+.sectionPrincipal__Container__img img {
+    width: 80%;
 }
 
 /****** End index principal section  styles ******/
 
 /****** Begin index features  section styles ******/
 
-.sectionWhite {
+.sectionFeatures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 20px;
-    text-align: center;
-    background-color: white;
+    margin-bottom: 20px;
 }
 
-.sectionWhite__sectionContainer__header p {
-    padding-top: 20px;
-}
-
-.sectionContainer__RowContainer__column {
-    display: inline-block;
+.sectionFeatures__Container__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
     text-align: center;
 }
 
-.sectionContainer__RowContainer img {
-    height: 100px;
-    padding: 20px 20px 0;
+.sectionFeatures__Container__header p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sectionFeatures__grid {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+}
+
+.sectionFeatures__grid img {
+    width: 10%;
+
+}
+
+.sectionFeatures__grid p {
+    padding: 0;
 }
 
 /****** End index features section  styles ******/
 
 /****** Begin index advantages  section styles ******/
 
-.sectionColorAdvantages {
+.sectionAdvantages {
     background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sectionAdvantages__container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sectionAdvantages__container__text {
+    width: 50%;
+    padding: 20px;
+}
+
+.sectionAdvantages__container__text h2 {
+    padding-bottom: 20px;
+}
+
+.sectionAdvantages__container__img {
+    width: 50%;
     text-align: center;
-    margin-top: 20px;
+
 }
 
-.sectionColor__sectionContainer__img--size {
-    display: inline-block;
-    width: 45%;
-}
-
-.sectionColor__sectionContainer__img--size img {
-    height: 300px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.sectionAdvantages__container__img img {
+    width: 70%;
     border-radius: 5px;
-}
-
-.sectionColor__sectionContainer__text p {
-    text-align: center;
-    padding: 10px;
 }
 
 /****** End index advantages section  styles ******/
@@ -140,31 +204,134 @@ header figure {
 
 /****** Begin index testimonials  section styles ******/
 
-.sectionWhite__testimonialsHeader h2 {
-    display: inline-block;
+.sectionTestimonials {
+    margin-top: 20px;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.testimonialsCarrousel {
-    display: inline-block;
+.sectionTestimonials__container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: center;
 }
 
-.cardClient {
-    display: inline-block;
-    width: 500px;
-}
-
-.testimonialsCarrousel figure,
-p {
-    display: inline-block;
-    padding: 20px;
-
+.sectionTestimonials__container__carrousel {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
 }
 
 /****** End index testimonials section  styles ******/
 
 
+
+
+/****** Begin  modules styles ******/
+
+.modulesMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modulesHeader {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sectionFeatures__grid {
+    margin-bottom: 20px;
+}
+
+
+/****** End modules modules  styles ******/
+
+/****** Begin  success styles ******/
+
+.clientsMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clientContainer{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.clientContainer__card img, picture{
+    width: 20%;
+}
+
+.clientContainer__text {
+    width: auto;
+}
+
+.clientsMain h2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.sectionlogos__grid {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+}
+
+.sectionlogos__grid img {
+    width: 40%;
+    
+}
+
+/****** End success  styles ******/
+
+
+
 /****** Begin  implementation styles ******/
+
+.implementationMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.implementationHeader {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.stepsContainer{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.stepsContainer h2{
+    margin-bottom: 20px;
+}
+.stepsContainer h3{
+    width: 80%;
+}
+
+.sectionColor__sectionContainer__img img {
+   width: 80%;
+    border-radius: 5px;
+   
+}
 
 .implementationH2 {
     color: orange;
@@ -175,58 +342,20 @@ p {
     color: darkgrey;
 }
 
-.separation {
-    margin: 20px;
+/****** End implementation  styles ******/
+
+/****** Begin  contact styles ******/
+
+.contactMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.separation img {
-    display: inline-block;
-    height: 300px;
-    width: 500px;
-}
-
-.cellSeparation {
-    text-align: center;
-    padding: 30px;
-}
-
-.cellSeparation p {
-    display: inline-block;
-    width: 300px;
-}
-
-.sectionLeft {
-    text-align: left;
-    margin: 20px;
-}
-
-.sectionLeft img {
-    height: 50px;
-    width: 50px;
-}
-
-.sectionLeft h3 {
-    display: inline-block;
-}
-
-.sectionLeft p {
-    display: inline-block;
-    width: 800px;
-    padding: 0;
-    padding-left: 20px;
-}
-
-.clientRow {
-    margin-top: 20px;
-}
-
-.clientRow figure {
-    display: inline;
-    margin: 50px;
-}
-
-.clientRow img {
-    height: 50px;
+.contactHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contactHeading {
@@ -245,75 +374,232 @@ p {
 
 }
 
-.contactForm input, 
+.contactForm input,
 textarea {
     display: inline-block;
     margin: 10px;
 }
-
+/****** End contact  styles ******/
 
 /****** Begin  footer  section styles ******/
 
 footer {
+    grid-column: 1/6;
+    grid-row: 3;
     background-color: darkslategray;
     color: white;
-    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    padding-top: 20px;
 
 }
 
 .contactContainer {
-    display: inline-block;
-    width: 33%;
-    text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 .contactContainer img {
-    height: 60px;
+    height: 50px;
 }
-
-.contactContainer h3 {
-    display: inline-block;
-    margin-bottom: 10px;
-}
-
-.contactContainer p {
-    display: block;
-    padding: 5px;
-}
-
 
 .socialContainer {
-    display: inline-block;
-    width: 33%;
+    grid-column: 2/3;
+    grid-row: 1/2;
     text-align: center;
+    width: 50%;
 }
 
-.socialContainer figure {
-    display: inline;
-    margin: 5px;
-
+.SocialContainer__logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
 
 .socialContainer h3 {
     margin-bottom: 10px;
 }
 
 .newsContainer {
-    display: inline-block;
-    width: 33%;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    align-items: center;
     text-align: center;
+}
+
+.newsContainer p {
+    display: inline-block;
+    width: 70%;
+
+}
+
+.newsContainer form {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .legalContainer {
-    text-align: center;
+    grid-column: 1/4;
+    grid-row: 2/3;
     font-size: 12px;
     padding: 20px 20px;
+    text-align: center;
 }
 
 .legalContainer a {
-
     text-decoration: none;
     color: white;
 }
 
+
 /****** End footer section  styles ******/
+
+@media (max-width: 768px) {
+    /*** Begin header***/
+    .header{
+        margin-bottom: 20px;
+    }
+
+    .header__nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headerContainer__menu li{
+        display: block;
+    }
+
+    /*** End header ***/
+
+    /** Begin footer **/
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .contactContainer {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-bottom: 20px;
+    }
+
+    .socialContainer {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .newsContainer {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .legalContainer {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    /** end footer **/
+
+    /** begin sections **/
+
+    .sectionPrincipal__Container {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-top: 20px; 
+        padding-bottom: 10px;
+    }
+
+    .sectionPrincipal__Container__text{
+        font-size: 0.8rem;
+    }
+
+    .sectionFeatures__grid {
+        width: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 10px;
+        text-align: center;
+    }
+
+    .sectionAdvantages__container{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sectionAdvantages__container__img{
+        margin-top: 20px;
+    }
+
+    h2 , h3 {
+        font-size: 0.9rem;
+    }
+
+    .stepsContainer{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .stepsContainer__text{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .implementationHeader{
+        text-align: center;
+    }
+
+    .clientContainer{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .modulesHeader{
+        text-align: center;
+    }
+
+    .clientsMain h2{
+        text-align: center;
+    }
+
+    .sectionlogos__grid {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-gap: 20px;
+        text-align: center;
+    }
+
+    .sectionFeatures__grid img {
+        width: 20%;
+    
+    }
+    /** end sections  **/
+
+}

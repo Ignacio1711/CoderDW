@@ -16,166 +16,182 @@
 <body>
     <header class="header">
         <nav class="header__nav">
-            <a href="../../index.html">
-                <figure>
-                    <img src="../image/logo.png" alt="Logo Empresa">
-                </figure>
-            </a>
-            <ul class="header__nav__menu">
-                <li class="header__nav__menu"> <a href="modulos.html">Módulos</a></li>
-                <li class="header__nav__menu"><a href="implementacion.html">Implementación</a></li>
-                <li class="header__nav__menu"><a href="exito.html">Casos de Éxito</a></li>
-                <li class="header__nav__menu"><a href="contacto.html">Contacto</a></li>
-                <li class="header__nav__menu">
-                    <input type="button" value="Obtén una demo" class="btnAction">
-                </li>
-            </ul>
+            <div class="headerContainer__logo">
+                <a href="../../index.html">
+                    <figure>
+                        <img src="../image/logo.png" alt="Logo Empresa">
+                    </figure>
+                </a>
+            </div>
+            <div class="headerContainer__menu">
+                <ul class="header__nav__menu">
+                    <li class="header__nav__menu"> <a href="modulos.html">Módulos</a></li>
+                    <li class="header__nav__menu"><a href="implementacion.html">Implementación</a></li>
+                    <li class="header__nav__menu"><a href="exito.html">Casos de Éxito</a></li>
+                    <li class="header__nav__menu"><a href="contacto.html">Contacto</a></li>
+                    <li class="header__nav__menu">
+                        <input type="button" value="Obtén una demo" class="btnAction">
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="sectionWhite separation">
-            <h1>Casos de éxito de implementación de SGO-Suite</h1>
-        </section>
-        <section id="masExitosas" class="sectionLeft">
-            <div id="cliente1" class="sectionLeft">
+        <section class="clientsMain">
+            <section class="modulesHeader">
+                <h1>Casos de éxito de implementación de SGO-Suite</h1>
+            </section>
+            <div id="cliente1" class="clientContainer">
+                <div class="clientContainer__card">
+                    <picture>
+                        <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 1">
+                    </picture>
+                    <h3>Cliente 1</h3>
+                </div>
+                <div class="clientContainer__text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odit modi mollitia facere
+                        suscipit,
+                        officia totam, veniam nostrum blanditiis corrupti obcaecati qui itaque deserunt tenetur aperiam
+                        consectetur soluta reiciendis molestias?</p>
+                </div>
+            </div>
+            <section class="modulesHeader">
+                <h1>Casos de éxito de implementación de SGO-Suite</h1>
+            </section>
+            <div id="cliente2" class="clientContainer">
+                <div class="clientContainer__card">
+                    <picture>
+                        <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 1">
+                    </picture>
+                    <h3>Cliente 2</h3>
+                </div>
+                <div class="clientContainer__text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odit modi mollitia facere
+                        suscipit,
+                        officia totam, veniam nostrum blanditiis corrupti obcaecati qui itaque deserunt tenetur aperiam
+                        consectetur soluta reiciendis molestias?</p>
+                </div>
+            </div>
+            <section class="modulesHeader">
+                <h1>Casos de éxito de implementación de SGO-Suite</h1>
+            </section>
+            <div id="cliente3" class="clientContainer">
+                <div class="clientContainer__card">
+                    <picture>
+                        <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 1">
+                    </picture>
+                    <h3>Cliente 3</h3>
+                </div>
+                <div class="clientContainer__text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odit modi mollitia facere
+                        suscipit,
+                        officia totam, veniam nostrum blanditiis corrupti obcaecati qui itaque deserunt tenetur aperiam
+                        consectetur soluta reiciendis molestias?</p>
+                </div>
+            </div>
+            <h2>Equipos que administran sus sistemas de gestión con SGO-Suite</h2>
+            <section id="logosClientes" class="sectionlogos__grid">
                 <figure>
                     <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 1">
                 </figure>
-                <h3>Cliente 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odit modi mollitia facere suscipit,
-                    officia totam, veniam nostrum blanditiis corrupti obcaecati qui itaque deserunt tenetur aperiam
-                    consectetur soluta reiciendis molestias?</p>
-            </div>
-            <div id="cliente2" class="sectionLeft">
                 <figure>
                     <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 2">
                 </figure>
-                <h3>Cliente 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odit modi mollitia facere suscipit,
-                    officia totam, veniam nostrum blanditiis corrupti obcaecati qui itaque deserunt tenetur aperiam
-                    consectetur soluta reiciendis molestias?</p>
-            </div>
-            <div id="cliente3" class="sectionLeft">
                 <figure>
                     <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 3">
                 </figure>
-                <h3>Cliente 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odit modi mollitia facere suscipit,
-                    officia totam, veniam nostrum blanditiis corrupti obcaecati qui itaque deserunt tenetur aperiam
-                    consectetur soluta reiciendis molestias?</p>
-            </div>
-        </section>
-        <section id="logosClientes" class="sectionWhite">
-            <h2>Equipos que administran sus sistemas de gestión con SGO-Suite</h2>
-            <div id="fila1" class="clientRow">
                 <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 1" >
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 4">
                 </figure>
                 <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 2" >
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 5">
                 </figure>
                 <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 3" >
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 6">
                 </figure>
                 <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 4" >
-                </figure>           
-                <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 5" >
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 7">
                 </figure>
                 <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 6" >
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 8">
                 </figure>
                 <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 7" >
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 1">
                 </figure>
                 <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 8" >
-                </figure>
-            </div>
-            <div id="fila2" class="clientRow">
-                <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 1" >
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 2">
                 </figure>
                 <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 2" >
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 3">
                 </figure>
                 <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 3" >
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 4">
                 </figure>
                 <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 4" >
-                </figure>           
-                <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 5" >
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 5">
                 </figure>
                 <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 6" >
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 6">
                 </figure>
                 <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 7" >
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 7">
                 </figure>
                 <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 8" >
-                </figure>
-            </div>
-            <div id="fila3" class="clientRow">
-                <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 1" >
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 8">
                 </figure>
                 <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 2" >
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 1">
                 </figure>
                 <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 3" >
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 2">
                 </figure>
                 <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 4" >
-                </figure>           
-                <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 5" >
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 3">
                 </figure>
                 <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 6" >
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 4">
                 </figure>
                 <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 7" >
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 5">
                 </figure>
                 <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 8" >
-                </figure>
-            </div>
-            <div id="fila 4" class="clientRow">
-                <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 1" >
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 6">
                 </figure>
                 <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 2" >
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 7">
                 </figure>
                 <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 3" >
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 8">
                 </figure>
                 <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 4" >
-                </figure>           
-                <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 5" >
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 1">
                 </figure>
                 <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 6" >
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 2">
                 </figure>
                 <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 7" >
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 3">
                 </figure>
                 <figure>
-                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 8" >
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 4">
                 </figure>
-            </div>
-            
+                <figure>
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 5">
+                </figure>
+                <figure>
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 6">
+                </figure>
+                <figure>
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 7">
+                </figure>
+                <figure>
+                    <img src="../image/sgoSuite/clientes/logoEmpresa.png" alt="logo cliente 8">
+                </figure>
+            </section>
         </section>
     </main>
     <footer>
-        <div id="datosContacto" class="contactContainer">
+        <div class="contactContainer">
             <figure>
                 <img src="../image/logo_blanco.png" alt="logo empresa">
             </figure>
@@ -185,24 +201,26 @@
             <p>555-2255</p>
             <p>info@email.com</p>
         </div>
-        <div id="redes" class="socialContainer">
+        <div class="socialContainer">
             <h3>Seguinos</h3>
-            <figure>
-                <a href="https://linkedin.com"><img src="../image/social/linkedin.jpg" alt="linkedin" height="36px"
-                        width="36px"></a>
-            </figure>
-            <figure>
-                <a href="https://facebook.com"><img src="../image/social/facebook.jpg" alt="facebook" height="36px"
-                        width="36px"></a>
-            </figure>
-            <figure>
-                <a href="https://twitter.com"><img src="../image/social/twitter.png" alt="twitter" height="36px"
-                        width="36px"></a>
-            </figure>
-            <figure>
-                <a href="https://youtube.com"><img src="../image/social/youtube.png" alt="youtube" height="36px"
-                        width="36px"></a>
-            </figure>
+            <div class="SocialContainer__logos">
+                <figure>
+                    <a href="https://linkedin.com"><img src="../image/social/linkedin.jpg" alt="linkedin" height="36px"
+                            width="36px"></a>
+                </figure>
+                <figure>
+                    <a href="https://facebook.com"><img src="../image/social/facebook.jpg" alt="facebook" height="36px"
+                            width="36px"></a>
+                </figure>
+                <figure>
+                    <a href="https://twitter.com"><img src="../image/social/twitter.png" alt="twitter" height="36px"
+                            width="36px"></a>
+                </figure>
+                <figure>
+                    <a href="https://youtube.com"><img src="../image/social/youtube.png" alt="youtube" height="36px"
+                            width="36px"></a>
+                </figure>
+            </div>
         </div>
         <div id="newsletter" class="newsContainer">
             <h3>Recibe nuestras novedades</h3>

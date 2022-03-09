@@ -16,95 +16,106 @@
 <body>
     <header class="header">
         <nav class="header__nav">
-            <a href="../../index.html">
-                <figure>
-                    <img src="../image/logo.png" alt="Logo Empresa">
-                </figure>
-            </a>
-            <ul class="header__nav__menu">
-                <li class="header__nav__menu"> <a href="modulos.html">Módulos</a></li>
-                <li class="header__nav__menu"><a href="implementacion.html">Implementación</a></li>
-                <li class="header__nav__menu"><a href="exito.html">Casos de Éxito</a></li>
-                <li class="header__nav__menu"><a href="contacto.html">Contacto</a></li>
-                <li class="header__nav__menu">
-                    <input type="button" value="Obtén una demo" class="btnAction">
-                </li>
-            </ul>
+            <div class="headerContainer__logo">
+                <a href="../../index.html">
+                    <figure>
+                        <img src="../image/logo.png" alt="Logo Empresa">
+                    </figure>
+                </a>
+            </div>
+            <div class="headerContainer__menu">
+                <ul class="header__nav__menu">
+                    <li class="header__nav__menu"> <a href="modulos.html">Módulos</a></li>
+                    <li class="header__nav__menu"><a href="implementacion.html">Implementación</a></li>
+                    <li class="header__nav__menu"><a href="exito.html">Casos de Éxito</a></li>
+                    <li class="header__nav__menu"><a href="contacto.html">Contacto</a></li>
+                    <li class="header__nav__menu">
+                        <input type="button" value="Obtén una demo" class="btnAction">
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <section id="implementacionHeader" class="sectionWhite">
-            <h1>Implementación planificada acorde a tus necesidades</h1>
-        </section>
-        <section id="relevamiento" class="sectionWhite">
-            <div class="sectionColor__sectionContainer__text separation">
-                <h2 class="implementationH2">
-                    01. Relevamiento
-                </h2>
-                <h3 class="implementationH3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel repellendus
-                    exercitationem nesciunt
-                    excepturi velit ab asperiores rem, voluptas magni, quasi laborum voluptates voluptate sunt vero
-                    illum,
-                    necessitatibus tenetur est laudantium?</h3>
-            </div>
-            <div class="sectionColor__sectionContainer__img  separation">
-                <figure>
-                    <img src="../image/sgoSuite/relevamiento.png" alt="relevamiento de información">
-                </figure>
-            </div>
-        </section>
-        <section id="Planificación" class="sectionWhite">
-            <div class="sectionColor__sectionContainer__img  separation">
-                <figure>
-                    <img src="../image/sgoSuite/planificacion.png" alt="planificación de implementación">
-                </figure>
-            </div>
-            <div class="sectionColor__sectionContainer__text separation">
-                <h2 class="implementationH2">
-                    02. Plan de implementación
-                </h2>
-                <h3 class="implementationH3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel repellendus
-                    exercitationem nesciunt
-                    excepturi velit ab asperiores rem, voluptas magni, quasi laborum voluptates voluptate sunt vero
-                    illum,
-                    necessitatibus tenetur est laudantium?</h3>
-            </div>
-        </section>
-        <section id="migracion" class="sectionWhite">
-            <div class="sectionColor__sectionContainer__text separation">
-                <h2 class="implementationH2">
-                    03. Migración
-                </h2>
-                <h3 class="implementationH3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel repellendus
-                    exercitationem nesciunt
-                    excepturi velit ab asperiores rem, voluptas magni, quasi laborum voluptates voluptate sunt vero
-                    illum,
-                    necessitatibus tenetur est laudantium?</h3>
-            </div>
-            <div class="sectionColor__sectionContainer__img  separation">
-                <figure>
-                    <img src="../image/sgoSuite/migration.png" alt="migración de datos">
-                </figure>
-            </div>
-        </section>
-        <section id="migracion" class="sectionWhite">
-            <div class="sectionColor__sectionContainer__img  separation">
-            <figure>
-                <img src="../image/sgoSuite/training.png" alt="migración de datos">
-            </figure>
-        </div>
-            <div class="sectionColor__sectionContainer__text separation">
-                <h2 class="implementationH2">
-                    04. Capacitación a usuarios
-                </h2>
-                <h3 class="implementationH3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel repellendus exercitationem nesciunt
-                    excepturi velit ab asperiores rem, voluptas magni, quasi laborum voluptates voluptate sunt vero illum,
-                    necessitatibus tenetur est laudantium?</h3>
+        <section class="implementationMain">
+            <section id="implementacionHeader" class="implementationHeader">
+                <h1>Implementación planificada acorde a tus necesidades</h1>
+            </section>
+            <section id="relevamiento" class="stepsContainer">
+                <div class="stepsContainer__text">
+                    <h2 class="implementationH2">
+                        01. Relevamiento
+                    </h2>
+                    <h3 class="implementationH3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                        repellendus
+                        exercitationem nesciunt
+                        excepturi velit ab asperiores rem, voluptas magni, quasi laborum voluptates voluptate sunt vero
+                        illum,
+                        necessitatibus tenetur est laudantium?</h3>
                 </div>
+                <div class="sectionColor__sectionContainer__img">
+                    <figure>
+                        <img src="../image/sgoSuite/relevamiento.png" alt="relevamiento de información">
+                    </figure>
+                </div>
+            </section>
+            <section id="Planificación" class="stepsContainer">
+                <div class="sectionColor__sectionContainer__img">
+                    <figure>
+                        <img src="../image/sgoSuite/planificacion.png" alt="planificación de implementación">
+                    </figure>
+                </div>
+                <div class="stepsContainer__text">
+                    <h2 class="implementationH2">
+                        02. Plan de implementación
+                    </h2>
+                    <h3 class="implementationH3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                        repellendus
+                        exercitationem nesciunt
+                        excepturi velit ab asperiores rem, voluptas magni, quasi laborum voluptates voluptate sunt vero
+                        illum,
+                        necessitatibus tenetur est laudantium?</h3>
+                </div>
+            </section>
+            <section id="migracion" class="stepsContainer">
+                <div class="stepsContainer__text">
+                    <h2 class="implementationH2">
+                        03. Migración
+                    </h2>
+                    <h3 class="implementationH3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                        repellendus
+                        exercitationem nesciunt
+                        excepturi velit ab asperiores rem, voluptas magni, quasi laborum voluptates voluptate sunt vero
+                        illum,
+                        necessitatibus tenetur est laudantium?</h3>
+                </div>
+                <div class="sectionColor__sectionContainer__img ">
+                    <figure>
+                        <img src="../image/sgoSuite/migration.png" alt="migración de datos">
+                    </figure>
+                </div>
+            </section>
+            <section id="migracion" class="stepsContainer">
+                <div class="sectionColor__sectionContainer__img ">
+                    <figure>
+                        <img src="../image/sgoSuite/training.png" alt="migración de datos">
+                    </figure>
+                </div>
+                <div class="stepsContainer__text">
+                    <h2 class="implementationH2">
+                        04. Capacitación a usuarios
+                    </h2>
+                    <h3 class="implementationH3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                        repellendus exercitationem nesciunt
+                        excepturi velit ab asperiores rem, voluptas magni, quasi laborum voluptates voluptate sunt vero
+                        illum,
+                        necessitatibus tenetur est laudantium?</h3>
+                </div>
+            </section>
         </section>
     </main>
     <footer>
-        <div id="datosContacto" class="contactContainer">
+        <div class="contactContainer">
             <figure>
                 <img src="../image/logo_blanco.png" alt="logo empresa">
             </figure>
@@ -114,24 +125,26 @@
             <p>555-2255</p>
             <p>info@email.com</p>
         </div>
-        <div id="redes" class="socialContainer">
+        <div class="socialContainer">
             <h3>Seguinos</h3>
-            <figure>
-                <a href="https://linkedin.com"><img src="../image/social/linkedin.jpg" alt="linkedin" height="36px"
-                        width="36px"></a>
-            </figure>
-            <figure>
-                <a href="https://facebook.com"><img src="../image/social/facebook.jpg" alt="facebook" height="36px"
-                        width="36px"></a>
-            </figure>
-            <figure>
-                <a href="https://twitter.com"><img src="../image/social/twitter.png" alt="twitter" height="36px"
-                        width="36px"></a>
-            </figure>
-            <figure>
-                <a href="https://youtube.com"><img src="../image/social/youtube.png" alt="youtube" height="36px"
-                        width="36px"></a>
-            </figure>
+            <div class="SocialContainer__logos">
+                <figure>
+                    <a href="https://linkedin.com"><img src="../image/social/linkedin.jpg" alt="linkedin" height="36px"
+                            width="36px"></a>
+                </figure>
+                <figure>
+                    <a href="https://facebook.com"><img src="../image/social/facebook.jpg" alt="facebook" height="36px"
+                            width="36px"></a>
+                </figure>
+                <figure>
+                    <a href="https://twitter.com"><img src="../image/social/twitter.png" alt="twitter" height="36px"
+                            width="36px"></a>
+                </figure>
+                <figure>
+                    <a href="https://youtube.com"><img src="../image/social/youtube.png" alt="youtube" height="36px"
+                            width="36px"></a>
+                </figure>
+            </div>
         </div>
         <div id="newsletter" class="newsContainer">
             <h3>Recibe nuestras novedades</h3>

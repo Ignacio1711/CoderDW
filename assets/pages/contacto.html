@@ -16,47 +16,48 @@
 <body>
     <header class="header">
         <nav class="header__nav">
-            <a href="../../index.html">
-                <figure>
-                    <img src="../image/logo.png" alt="Logo Empresa">
-                </figure>
-            </a>
-            <ul class="header__nav__menu">
-                <li class="header__nav__menu"> <a href="modulos.html">Módulos</a></li>
-                <li class="header__nav__menu"><a href="implementacion.html">Implementación</a></li>
-                <li class="header__nav__menu"><a href="exito.html">Casos de Éxito</a></li>
-                <li class="header__nav__menu"><a href="contacto.html">Contacto</a></li>
-                <li class="header__nav__menu">
-                    <input type="button" value="Obtén una demo" class="btnAction">
-                </li>
-            </ul>
+            <div class="headerContainer__logo">
+                <a href="../../index.html">
+                    <figure>
+                        <img src="../image/logo.png" alt="Logo Empresa">
+                    </figure>
+                </a>
+            </div>
+            <div class="headerContainer__menu">
+                <ul class="header__nav__menu">
+                    <li class="header__nav__menu"> <a href="modulos.html">Módulos</a></li>
+                    <li class="header__nav__menu"><a href="implementacion.html">Implementación</a></li>
+                    <li class="header__nav__menu"><a href="exito.html">Casos de Éxito</a></li>
+                    <li class="header__nav__menu"><a href="contacto.html">Contacto</a></li>
+                    <li class="header__nav__menu">
+                        <input type="button" value="Obtén una demo" class="btnAction">
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <section id="contactoHeader" class="sectionWhite">
-            <h5 class="contactHeading">¿Tienes alguna pregunta?</h5>
-            <h1>Contáctate con nosotros</h1>
-            <h5 class="contactHeading">Estamos para cualquier duda que puedas tener</h5>
+        <section class="contactMain">
+            <section id="contactoHeader" class="contactHeader">
+                <h5 class="contactHeading">¿Tienes alguna pregunta?</h5>
+                <h1>Contáctate con nosotros</h1>
+                <h5 class="contactHeading">Estamos para cualquier duda que puedas tener</h5>
+            </section>
+            <section id="formulario" class="">
+                <div class="contactForm">
+                    <form action="" method="" enctype="">
+                        <input type="text" name="" id="" placeholder="Nombre">
+                        <input type="text" name="" id="" placeholder="Apellido">
+                        <input type="email" name="" id="" placeholder="Email">
+                        <textarea name="message" id="" cols="30" rows="20" placeholder="Mensaje"></textarea>
+                        <input type="submit" value="Enviar" class="btnAction">
+                    </form>
+                </div>
+            </section>
         </section>
-        <section id="formulario" class="sectionWhite">
-            <div class="contactForm">
-                <form action="" method="" enctype="">
-                    <input type="text" name="" id="" placeholder="Nombre">
-                    <input type="text" name="" id="" placeholder="Apellido">
-                    <input type="email" name="" id="" placeholder="Email">
-                    <textarea name="message" id="" cols="30" rows="20" placeholder="Mensaje"></textarea>
-                    <input type="submit" value="Enviar" class="btnAction">
-                </form>
-            </div>
-        </section>
-        <!-- <section id="mapa">
-            <figure>
-                <img src="./assets/images/mapa.png" alt="Mapa" height="250px" width="800px">
-            </figure>
-        </section> -->
     </main>
     <footer>
-        <div id="datosContacto" class="contactContainer">
+        <div class="contactContainer">
             <figure>
                 <img src="../image/logo_blanco.png" alt="logo empresa">
             </figure>
@@ -66,24 +67,26 @@
             <p>555-2255</p>
             <p>info@email.com</p>
         </div>
-        <div id="redes" class="socialContainer">
+        <div class="socialContainer">
             <h3>Seguinos</h3>
-            <figure>
-                <a href="https://linkedin.com"><img src="../image/social/linkedin.jpg" alt="linkedin" height="36px"
-                        width="36px"></a>
-            </figure>
-            <figure>
-                <a href="https://facebook.com"><img src="../image/social/facebook.jpg" alt="facebook" height="36px"
-                        width="36px"></a>
-            </figure>
-            <figure>
-                <a href="https://twitter.com"><img src="../image/social/twitter.png" alt="twitter" height="36px"
-                        width="36px"></a>
-            </figure>
-            <figure>
-                <a href="https://youtube.com"><img src="../image/social/youtube.png" alt="youtube" height="36px"
-                        width="36px"></a>
-            </figure>
+            <div class="SocialContainer__logos">
+                <figure>
+                    <a href="https://linkedin.com"><img src="../image/social/linkedin.jpg" alt="linkedin" height="36px"
+                            width="36px"></a>
+                </figure>
+                <figure>
+                    <a href="https://facebook.com"><img src="../image/social/facebook.jpg" alt="facebook" height="36px"
+                            width="36px"></a>
+                </figure>
+                <figure>
+                    <a href="https://twitter.com"><img src="../image/social/twitter.png" alt="twitter" height="36px"
+                            width="36px"></a>
+                </figure>
+                <figure>
+                    <a href="https://youtube.com"><img src="../image/social/youtube.png" alt="youtube" height="36px"
+                            width="36px"></a>
+                </figure>
+            </div>
         </div>
         <div id="newsletter" class="newsContainer">
             <h3>Recibe nuestras novedades</h3>
