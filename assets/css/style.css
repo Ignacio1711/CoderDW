@@ -53,12 +53,25 @@ body {
 .headerContainer__menu li {
     display: inline-block;
     padding: 0 20px;
+    /* border: 1px solid  #f08109; */
 }
 
 .headerContainer__menu a {
     text-decoration: none;
     color: black;
+    transition: border;
+    
 }
+
+.headerContainer__menu a:hover{
+   background-color: orange;
+   border: 1px solid orange;
+   border-radius: 5px;
+   color: white;
+   
+  }
+
+
 
 /*  Button get a demo */
 .btnAction {
@@ -67,7 +80,17 @@ body {
     border: 1px solid orange;
     border-radius: 5px;
     padding: 5px;
+    box-shadow: 1px 1px darkgray;
+    transition: background-color;
+
 }
+
+.btnAction:hover{
+    background-color: darkgray;
+    transform: scale(1.1,1.1);
+}
+
+
 
 /****** End header styles******/
 
@@ -84,7 +107,7 @@ main {
 /****** Begin index principal section styles ******/
 
 .sectionPrincipal {
-    background-image: linear-gradient(to right, #bdc3c7, #2c3e50);
+    background-image: linear-gradient(to left, #6f6a65, #8f7253, #af7941, #cf7e2c, #f08109);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -105,7 +128,23 @@ main {
 
 .sectionPrincipal__Container__text h1 {
     padding-bottom: 20px;
+    font-size: 1.5em;
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
 }
+
+@keyframes zoom{
+    0% {font-size: 1.1em;}
+    25% {font-size: 1.2em;}
+    50% {font-size: 1.3em;}
+    100% {font-size: 1.4em;}
+}
+
+
+
+
 
 .sectionPrincipal__Container__img {
     width: 50%;
@@ -146,14 +185,20 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 30px;
     text-align: center;
 }
 
 .sectionFeatures__grid img {
-    width: 10%;
+    width: 20%;
+    transition: width 0.5s;
 
 }
+
+.sectionFeatures__grid img:hover {
+    width: 22%;
+}
+
 
 .sectionFeatures__grid p {
     padding: 0;
@@ -164,7 +209,7 @@ main {
 /****** Begin index advantages  section styles ******/
 
 .sectionAdvantages {
-    background-color: lightgray;
+    background-image: linear-gradient(to right, #6f6a65, #8f7253, #af7941, #cf7e2c, #f08109);
     display: flex;
     flex-direction: row;
     justify-content: center;
