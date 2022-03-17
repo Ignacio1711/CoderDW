@@ -182,12 +182,13 @@ body {
 
 
 /****** Begin  modules styles ******/
-.sectionModules{
-    width: 80%;
-}
 
 .sectionModules img{
-    width: 50%;
+    width: 30%;
+}
+
+.sectionModules h1{
+    font-size: 1.7em;
 }
 
 /****** End modules modules  styles ******/
