@@ -9,158 +9,189 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,100;1,400&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>SGO Suite | Implementación</title>
 </head>
 
 <body>
-    <header class="header">
-        <nav class="header__nav">
-            <div class="headerContainer__logo">
-                <a href="../../index.html">
-                    <figure>
-                        <img src="../image/logo.png" alt="Logo Empresa">
-                    </figure>
-                </a>
-            </div>
-            <div class="headerContainer__menu">
-                <ul class="header__nav__menu">
-                    <li class="header__nav__menu"> <a href="modulos.html">Módulos</a></li>
-                    <li class="header__nav__menu"><a href="implementacion.html">Implementación</a></li>
-                    <li class="header__nav__menu"><a href="exito.html">Casos de Éxito</a></li>
-                    <li class="header__nav__menu"><a href="contacto.html">Contacto</a></li>
-                    <li class="header__nav__menu">
-                        <input type="button" value="Obtén una demo" class="btnAction">
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="implementationMain">
-            <section id="implementacionHeader" class="implementationHeader">
-                <h1>Implementación planificada acorde a tus necesidades</h1>
-            </section>
-            <section id="relevamiento" class="stepsContainer">
-                <div class="stepsContainer__text">
-                    <h2 class="implementationH2">
-                        01. Relevamiento
-                    </h2>
-                    <h3 class="implementationH3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-                        repellendus
-                        exercitationem nesciunt
-                        excepturi velit ab asperiores rem, voluptas magni, quasi laborum voluptates voluptate sunt vero
-                        illum,
-                        necessitatibus tenetur est laudantium?</h3>
-                </div>
-                <div class="sectionColor__sectionContainer__img">
-                    <figure>
-                        <img src="../image/sgoSuite/relevamiento.png" alt="relevamiento de información">
-                    </figure>
-                </div>
-            </section>
-            <section id="Planificación" class="stepsContainer">
-                <div class="sectionColor__sectionContainer__img">
-                    <figure>
-                        <img src="../image/sgoSuite/planificacion.png" alt="planificación de implementación">
-                    </figure>
-                </div>
-                <div class="stepsContainer__text">
-                    <h2 class="implementationH2">
-                        02. Plan de implementación
-                    </h2>
-                    <h3 class="implementationH3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-                        repellendus
-                        exercitationem nesciunt
-                        excepturi velit ab asperiores rem, voluptas magni, quasi laborum voluptates voluptate sunt vero
-                        illum,
-                        necessitatibus tenetur est laudantium?</h3>
-                </div>
-            </section>
-            <section id="migracion" class="stepsContainer">
-                <div class="stepsContainer__text">
-                    <h2 class="implementationH2">
-                        03. Migración
-                    </h2>
-                    <h3 class="implementationH3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-                        repellendus
-                        exercitationem nesciunt
-                        excepturi velit ab asperiores rem, voluptas magni, quasi laborum voluptates voluptate sunt vero
-                        illum,
-                        necessitatibus tenetur est laudantium?</h3>
-                </div>
-                <div class="sectionColor__sectionContainer__img ">
-                    <figure>
-                        <img src="../image/sgoSuite/migration.png" alt="migración de datos">
-                    </figure>
-                </div>
-            </section>
-            <section id="migracion" class="stepsContainer">
-                <div class="sectionColor__sectionContainer__img ">
-                    <figure>
-                        <img src="../image/sgoSuite/training.png" alt="migración de datos">
-                    </figure>
-                </div>
-                <div class="stepsContainer__text">
-                    <h2 class="implementationH2">
-                        04. Capacitación a usuarios
-                    </h2>
-                    <h3 class="implementationH3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-                        repellendus exercitationem nesciunt
-                        excepturi velit ab asperiores rem, voluptas magni, quasi laborum voluptates voluptate sunt vero
-                        illum,
-                        necessitatibus tenetur est laudantium?</h3>
-                </div>
-            </section>
-        </section>
-    </main>
-    <footer>
-        <div class="contactContainer">
-            <figure>
-                <img src="../image/logo_blanco.png" alt="logo empresa">
-            </figure>
-            <h3>Donde encontrarnos</h3>
-            <p>Calle 1 entre 2 y 3</p>
-            <p>Gualeguaychú - Entre Ríos (2820)</p>
-            <p>555-2255</p>
-            <p>info@email.com</p>
-        </div>
-        <div class="socialContainer">
-            <h3>Seguinos</h3>
-            <div class="SocialContainer__logos">
-                <figure>
-                    <a href="https://linkedin.com"><img src="../image/social/linkedin.jpg" alt="linkedin" height="36px"
-                            width="36px"></a>
-                </figure>
-                <figure>
-                    <a href="https://facebook.com"><img src="../image/social/facebook.jpg" alt="facebook" height="36px"
-                            width="36px"></a>
-                </figure>
-                <figure>
-                    <a href="https://twitter.com"><img src="../image/social/twitter.png" alt="twitter" height="36px"
-                            width="36px"></a>
-                </figure>
-                <figure>
-                    <a href="https://youtube.com"><img src="../image/social/youtube.png" alt="youtube" height="36px"
-                            width="36px"></a>
-                </figure>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 px-0">
+                <header class="container-fluid px-0 header">
+                    <nav class="row header__nav">
+                        <div class="col-md-6 px-0 headerContainer__logo">
+                            <a href="../../index.html">
+                                <picture>
+                                    <img src="../image/logo.png" alt="Logo Empresa">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="col-md-6 px-0  headerContainer__menu">
+                            <ul class="">
+                                <li class=""> <a href="modulos.html">Módulos</a></li>
+                                <li class=""><a href="implementacion.html">Implementación</a>
+                                </li>
+                                <li class=""><a href="exito.html">Casos de Éxito</a></li>
+                                <li class=""><a href="contacto.html">Contacto</a></li>
+                                <li class="">
+                                    <input type="button" value="Obtén una demo" class="btnAction">
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
             </div>
         </div>
-        <div id="newsletter" class="newsContainer">
-            <h3>Recibe nuestras novedades</h3>
-            <p>Suscríbete a nuestro newsletter para recibir las ultimas novedades de SGO-Suite</p>
-            <form action="" class="footerForm">
-                <input type="text" placeholder="Nombre y apellido">
-                <input type="email" placeholder="Email">
-                <input type="submit" value="Suscribirse" class="btnAction">
-            </form>
+        <div class="row">
+            <div class="col-md-12">
+                <main class="container-fluid px-0 contentCenter textCenter sectionGap">
+                    <div class="row sectionGap">
+                        <div class="col-md-12 textCenter implementationH1">
+                            <h1>Implementación planificada acorde a tus necesidades</h1>
+                        </div>
+                    </div>
+                    <div class="row sectionGap survey">
+                        <div class="col-md-6 contentCenter">
+                            <h2 class="implementationH2">
+                                01. Relevamiento
+                            </h2>
+                            <h3 class="implementationH3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                                repellendus
+                                exercitationem nesciunt
+                                excepturi velit ab asperiores rem, voluptas magni, quasi laborum voluptates voluptate
+                                sunt
+                                vero
+                                illum,
+                                necessitatibus tenetur est laudantium?</h3>
+                        </div>
+                        <div class="col-md-6 contentCenter">
+                            <figure>
+                                <img src="../image/sgoSuite/relevamiento.png" alt="relevamiento de información">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row sectionGap plan">
+                        <div class="col-md-6 contentCenter">
+                            <figure>
+                                <img src="../image/sgoSuite/planificacion.png" alt="planificación de implementación">
+                            </figure>
+                        </div>
+                        <div class="col-md-6 contentCenter">
+                            <h2 class="implementationH2">
+                                02. Plan de implementación
+                            </h2>
+                            <h3 class="implementationH3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                                repellendus
+                                exercitationem nesciunt
+                                excepturi velit ab asperiores rem, voluptas magni, quasi laborum voluptates voluptate
+                                sunt
+                                vero
+                                illum,
+                                necessitatibus tenetur est laudantium?</h3>
+                        </div>
+                    </div>
+                    <div class="row sectionGap migration">
+                        <div class="col-md-6 contentCenter">
+                            <h2 class="implementationH2">
+                                03. Migración
+                            </h2>
+                            <h3 class="implementationH3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                                repellendus
+                                exercitationem nesciunt
+                                excepturi velit ab asperiores rem, voluptas magni, quasi laborum voluptates voluptate
+                                sunt
+                                vero
+                                illum,
+                                necessitatibus tenetur est laudantium?</h3>
+                        </div>
+                        <div class="col-md-6 contentCenter">
+                            <figure>
+                                <img src="../image/sgoSuite/migration.png" alt="migración de datos">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row sectionGap training">
+                        <div class="col-md-6 contentCenter">
+                            <figure>
+                                <img src="../image/sgoSuite/training.png" alt="migración de datos">
+                            </figure>
+                        </div>
+                        <div class="col-md-6 contentCenter">
+                            <h2 class="implementationH2">
+                                04. Capacitación a usuarios
+                            </h2>
+                            <h3 class="implementationH3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                                repellendus exercitationem nesciunt
+                                excepturi velit ab asperiores rem, voluptas magni, quasi laborum voluptates voluptate sunt
+                                vero
+                                illum,
+                                necessitatibus tenetur est laudantium?</h3>
+                        </div>
+                    </div>
+                </main>
+            </div>
         </div>
-        <div id="legales" class="legalContainer">
-            <a href="#">2022 - SGO-Suite - Todos los derechos reservados</a>
-            <a href="#">Términos & Privacidad - </a>
-            <a href="#">Políticas de cookies</a>
+        <div class="row">
+            <div class="col-md-12 px-0">
+                <footer class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 contactContainer textCenter contentCenter">
+                            <figure>
+                                <img src="../image/logo_blanco.png" alt="logo empresa">
+                            </figure>
+                            <h3>Donde encontrarnos</h3>
+                            <p>Calle 1 entre 2 y 3</p>
+                            <p>Gualeguaychú - Entre Ríos (2820)</p>
+                            <p>555-2255</p>
+                            <p>info@email.com</p>
+                        </div>
+                        <div class="col-md-4 textCenter contentCenter">
+                            <h3>Seguinos</h3>
+                            <div class="SocialContainer__logos">
+                                <figure>
+                                    <a href="https://linkedin.com"><img src="../image/social/linkedin.jpg"
+                                            alt="linkedin" height="36px" width="36px"></a>
+                                </figure>
+                                <figure>
+                                    <a href="https://facebook.com"><img src="../image/social/facebook.jpg"
+                                            alt="facebook" height="36px" width="36px"></a>
+                                </figure>
+                                <figure>
+                                    <a href="https://twitter.com"><img src="../image/social/twitter.png" alt="twitter"
+                                            height="36px" width="36px"></a>
+                                </figure>
+                                <figure>
+                                    <a href="https://youtube.com"><img src="../image/social/youtube.png" alt="youtube"
+                                            height="36px" width="36px"></a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-md-4 newsContainer textCenter contentCenter">
+                            <h3>Recibe nuestras novedades</h3>
+                            <p>Suscríbete a nuestro newsletter para recibir las ultimas novedades de SGO-Suite</p>
+                            <form action="" class="">
+                                <input type="text" placeholder="Nombre y apellido">
+                                <input type="email" placeholder="Email">
+                                <input type="submit" value="Suscribirse" class="btnAction">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 textCenter legalContainer">
+                            <a href="#">2022 - SGO-Suite - Todos los derechos reservados</a>
+                            <a href="#">Términos & Privacidad - </a>
+                            <a href="#">Políticas de cookies</a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
         </div>
-    </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

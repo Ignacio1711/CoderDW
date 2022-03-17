@@ -35,7 +35,10 @@ ol, ul {
 body {
     font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
-    
+}
+
+main{
+    min-height: 70vh;
 }
 
 /******  Begin header styles ******/
@@ -148,8 +151,6 @@ body {
     width: 80%;
 }
 
-
-
 /****** End index advantages section  styles ******/
 
 
@@ -179,8 +180,6 @@ body {
 /****** End index testimonials section  styles ******/
 
 
-
-
 /****** Begin  modules styles ******/
 
 .sectionModules img{
@@ -195,32 +194,12 @@ body {
 
 /****** Begin  success styles ******/
 
-.clientsMain{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.successCases img{
+    width: 4rem;
 }
 
-.clientContainer{
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.clientContainer__card img, picture{
-    width: 20%;
-}
-
-.clientContainer__text {
-    width: auto;
-}
-
-.clientsMain h2 {
-    margin-bottom: 20px;
-    margin-top: 20px;
+.successCases h1{
+    font-size: 1.7em;
 }
 
 .sectionlogos__grid {
@@ -235,7 +214,7 @@ body {
 }
 
 .sectionlogos__grid img {
-    width: 40%;
+    width: 2rem;
     
 }
 
@@ -245,83 +224,73 @@ body {
 
 /****** Begin  implementation styles ******/
 
-.implementationMain{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.implementationHeader {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.stepsContainer{
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 50px;
-}
-
-.stepsContainer h2{
-    margin-bottom: 20px;
-}
-.stepsContainer h3{
-    width: 80%;
-}
-
-.sectionColor__sectionContainer__img img {
-   width: 80%;
-    border-radius: 5px;
-   
+.implementationH1 h1 {
+    font-size: 1.7em;  
 }
 
 .implementationH2 {
-    color: orange;
-    font-size: 40px;
+    color: orange;  
 }
 
 .implementationH3 {
     color: darkgrey;
 }
 
+.plan img{
+    width: 70%;
+    border-radius: 5px;
+}
+
+.migration img{
+    width: 60%;
+    border-radius: 5px;
+}
+
+.survey img{
+   
+    border-radius: 5px;
+}
+
+.training img {
+    width: 80%;
+    border-radius: 5px;
+}
+
 /****** End implementation  styles ******/
 
 /****** Begin  contact styles ******/
 
-.contactMain{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.contactHeader{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .contactHeading {
     color: coral;
     font-weight: bold;
-    margin: 10px;
+
 }
 
-.contactForm {
-    display: inline-block;
+.contactHeading h1 {
+    color: black;
+    font-size: 1.7em;
+
+}
+
+
+.contactForm form {
+    display: flex;
+    flex-direction: column;
     border: 1px solid coral;
     border-radius: 5px;
-    width: 300px;
-    text-align: center;
-    margin: 20px;
 
 }
 
-.contactForm input,
-textarea {
-    display: inline-block;
+.contactForm input, textarea {
     margin: 10px;
 }
+
+.contactForm textarea {
+    height: 12rem;
+}
+
 /****** End contact  styles ******/
 
 /****** Begin  footer  section styles ******/
