@@ -203,18 +203,11 @@ main{
 }
 
 .sectionlogos__grid {
-    margin-top: 20px;
-    margin-bottom: 20px;
     width: 80%;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-gap: 20px;
-    text-align: center;
-}
+} 
 
 .sectionlogos__grid img {
-    width: 2rem;
+    width: 3rem;
     
 }
 
