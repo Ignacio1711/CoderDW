@@ -49,6 +49,7 @@ main {
 
 .header__nav {
     text-align: center;
+
 }
 
 .headerContainer__logo img {
@@ -64,14 +65,12 @@ main {
 .headerContainer__menu li {
     display: inline-block;
     padding: 0 20px;
-
 }
 
 .headerContainer__menu a {
     text-decoration: none;
     color: black;
     transition: border;
-
 }
 
 .headerContainer__menu a:hover {
@@ -79,10 +78,7 @@ main {
     border: 1px solid orange;
     border-radius: 5px;
     color: white;
-
 }
-
-
 
 /*  Button get a demo */
 .btnAction {
@@ -186,25 +182,24 @@ p {
     flex-direction: row;
     font-size: 0.8em;
     margin-right: 10px;
-    box-shadow: 2px 2px #f6f6f6;  
-             
+    box-shadow: 2px 2px #f6f6f6;
 }
 
 .carousel__card__client img {
-border-radius: 50%;
-background: linear-gradient(145deg, #cacaca, #f0f0f0);
-box-shadow:  16px 16px 38px #cacaca,
-             -16px -16px 38px #f6f6f6;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow: 16px 16px 38px #cacaca,
+        -16px -16px 38px #f6f6f6;
     width: 7rem;
 }
 
-.carousel__card__logo{
-    box-shadow:  16px 16px 38px #cacaca,
-             -16px -16px 38px #f6f6f6;
-             border-radius: 5px;
+.carousel__card__logo {
+    box-shadow: 16px 16px 38px #cacaca,
+        -16px -16px 38px #f6f6f6;
+    border-radius: 5px;
 }
 
-.carousel__card__logo img{
+.carousel__card__logo img {
     width: 8rem;
 }
 
@@ -362,4 +357,3 @@ footer {
 }
 
 /****** End footer section  styles ******/
-
