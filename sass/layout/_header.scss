@@ -24,7 +24,7 @@
         text-decoration: none;
         color: black;
         transition: border;
-        :hover {
+        &:hover {
             background-color: orange;
             border: 1px solid orange;
             border-radius: 5px;

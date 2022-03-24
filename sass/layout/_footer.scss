@@ -14,10 +14,9 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-
-.SocialContainer__logos figure {
-    margin-right: 1rem;
+    figure {
+        margin-right: 1rem;
+    }
 }
 
 .socialContainer h3 {

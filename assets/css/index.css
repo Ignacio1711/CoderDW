@@ -42,9 +42,8 @@ main {
   padding: 5px;
   box-shadow: 1px 1px darkgray;
   transition: background-color; }
-
-.btnAction:hover {
-  background-color: darkgray; }
+  .btnAction:hover {
+    background-color: darkgray; }
 
 /*layout*/
 /******  Begin header styles ******/
@@ -67,7 +66,7 @@ main {
     text-decoration: none;
     color: black;
     transition: border; }
-    .headerContainer__menu a :hover {
+    .headerContainer__menu a:hover {
       background-color: orange;
       border: 1px solid orange;
       border-radius: 5px;
@@ -85,9 +84,8 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
-
-.SocialContainer__logos figure {
-  margin-right: 1rem; }
+  .SocialContainer__logos figure {
+    margin-right: 1rem; }
 
 .socialContainer h3 {
   margin-bottom: 10px; }
@@ -107,14 +105,12 @@ footer {
 /****** Begin index principal section styles ******/
 .sectionPrincipal {
   background-image: linear-gradient(to left, #6f6a65, #8f7253, #af7941, #cf7e2c, #f08109); }
-
-.sectionPrincipal img {
-  width: 70%;
-  text-align: center; }
-
-.sectionPrincipal h1 {
-  width: 80%;
-  font-size: 1.7em; }
+  .sectionPrincipal img {
+    width: 70%;
+    text-align: center; }
+  .sectionPrincipal h1 {
+    width: 80%;
+    font-size: 1.7em; }
 
 /****** End index principal section  styles ******/
 /****** Begin index features  section styles ******/
@@ -129,14 +125,11 @@ footer {
 /****** Begin index advantages  section styles ******/
 .sectionAdvantages {
   background-image: linear-gradient(to right, #6f6a65, #8f7253, #af7941, #cf7e2c, #f08109); }
-
-.sectionAdvantages img {
-  width: 70%;
-  border-radius: 5px; }
-
-.sectionAdvantages h3,
-p {
-  width: 80%; }
+  .sectionAdvantages img {
+    width: 70%;
+    border-radius: 5px; }
+  .sectionAdvantages h3, .sectionAdvantages p {
+    width: 80%; }
 
 /****** End index advantages section  styles ******/
 /****** Begin index testimonials  section styles ******/
@@ -146,17 +139,18 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: center; }
+  .sectionTestimonials__container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: center; }
+    .sectionTestimonials__container__carrousel {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row; }
 
-.sectionTestimonials__container {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  text-align: center; }
-
-.sectionTestimonials__container__carrousel {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row; }
+.carousel {
+  width: 70%; }
 
 .carousel__card {
   border-radius: 5px;
@@ -165,22 +159,16 @@ p {
   font-size: 0.8em;
   margin-right: 10px;
   box-shadow: 2px 2px #f6f6f6; }
-
-.carousel__card__client img {
-  border-radius: 50%;
-  background: linear-gradient(145deg, #cacaca, #f0f0f0);
-  box-shadow: 16px 16px 38px #cacaca, -16px -16px 38px #f6f6f6;
-  width: 7rem; }
-
-.carousel__card__logo {
-  box-shadow: 16px 16px 38px #cacaca, -16px -16px 38px #f6f6f6;
-  border-radius: 5px; }
-
-.carousel__card__logo img {
-  width: 8rem; }
-
-.carousel {
-  width: 70%; }
+  .carousel__card__client img {
+    border-radius: 50%;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow: 16px 16px 38px #cacaca, -16px -16px 38px #f6f6f6;
+    width: 7rem; }
+  .carousel__card__logo {
+    box-shadow: 16px 16px 38px #cacaca, -16px -16px 38px #f6f6f6;
+    border-radius: 5px; }
+    .carousel__card__logo img {
+      width: 8rem; }
 
 /****** End index testimonials section  styles ******/
 /****** Begin  modules styles ******/
@@ -226,31 +214,27 @@ p {
 
 .sectionlogos__grid {
   width: 80%; }
-
-.sectionlogos__grid img {
-  width: 3rem; }
+  .sectionlogos__grid img {
+    width: 3rem; }
 
 /****** End success  styles ******/
 /****** Begin  contact styles ******/
 .contactHeading {
   color: coral;
   font-weight: bold; }
-
-.contactHeading h1 {
-  color: black;
-  font-size: 1.7em; }
+  .contactHeading h1 {
+    color: black;
+    font-size: 1.7em; }
 
 .contactForm form {
   display: flex;
   flex-direction: column;
   border: 1px solid coral;
   border-radius: 5px; }
-
-.contactForm input,
-textarea {
-  margin: 10px; }
-
-.contactForm textarea {
-  height: 12rem; }
+  .contactForm form input {
+    margin: 10px; }
+  .contactForm form textarea {
+    margin: 10px;
+    height: 12rem; }
 
 /****** End contact  styles ******/

@@ -2,30 +2,29 @@
 
 .sectionPrincipal {
     background-image: linear-gradient(to left, #6f6a65, #8f7253, #af7941, #cf7e2c, #f08109);
-}
-
-.sectionPrincipal img {
-    width: 70%;
-    text-align: center;
-}
-
-.sectionPrincipal h1 {
-    width: 80%;
-    font-size: 1.7em;
+    img {
+        width: 70%;
+        text-align: center;
+    }
+    h1 {
+        width: 80%;
+        font-size: 1.7em;
+    }
 }
 
 /****** End index principal section  styles ******/
 
 /****** Begin index features  section styles ******/
 
-.sectionFeatures p {
-    width: 80%;
-}
-
-.sectionFeatures img {
-    width: 20%;
-    transition: width 0.5s;
-}
+.sectionFeatures{
+    p {
+        width: 80%;
+    }
+    img {
+        width: 20%;
+        transition: width 0.5s;
+    }
+} 
 
 /****** End index features section  styles ******/
 
@@ -35,16 +34,13 @@
 
 .sectionAdvantages {
     background-image: linear-gradient(to right, #6f6a65, #8f7253, #af7941, #cf7e2c, #f08109);
-}
-
-.sectionAdvantages img {
-    width: 70%;
-    border-radius: 5px;
-}
-
-.sectionAdvantages h3,
-p {
+    img {
+        width: 70%;
+        border-radius: 5px;
+    }
+    h3,p {
     width: 80%;
+    }
 }
 
 /****** End index advantages section  styles ******/
@@ -58,20 +54,22 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        text-align: center;
+        &__carrousel {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+    }
 
 }
 
-.sectionTestimonials__container {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    text-align: center;
-}
-
-.sectionTestimonials__container__carrousel {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
+.carousel {
+    width: 70%;
 }
 
 .carousel__card {
@@ -81,28 +79,21 @@ p {
     font-size: 0.8em;
     margin-right: 10px;
     box-shadow: 2px 2px #f6f6f6;
-}
-
-.carousel__card__client img {
-    border-radius: 50%;
-    background: linear-gradient(145deg, #cacaca, #f0f0f0);
-    box-shadow: 16px 16px 38px #cacaca,
-        -16px -16px 38px #f6f6f6;
-    width: 7rem;
-}
-
-.carousel__card__logo {
-    box-shadow: 16px 16px 38px #cacaca,
-        -16px -16px 38px #f6f6f6;
-    border-radius: 5px;
-}
-
-.carousel__card__logo img {
-    width: 8rem;
-}
-
-.carousel {
-    width: 70%;
+    &__client img {
+        border-radius: 50%;
+        background: linear-gradient(145deg, #cacaca, #f0f0f0);
+        box-shadow: 16px 16px 38px #cacaca,
+            -16px -16px 38px #f6f6f6;
+        width: 7rem;
+    }
+    &__logo {
+        box-shadow: 16px 16px 38px #cacaca,
+            -16px -16px 38px #f6f6f6;
+        border-radius: 5px;
+        & img {
+            width: 8rem;
+        }
+    }
 }
 
 /****** End index testimonials section  styles ******/

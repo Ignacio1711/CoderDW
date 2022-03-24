@@ -1,20 +1,20 @@
 /****** Begin  success styles ******/
 
-.successCases img {
-    width: 4rem;
-}
-
-.successCases h1 {
-    font-size: 1.7em;
+.successCases{
+    &  img {
+        width: 4rem;
+    }
+    & h1 {
+        font-size: 1.7em;
+    }
 }
 
 .sectionlogos__grid {
     width: 80%;
+    img {
+        width: 3rem;
+    }
 }
 
-.sectionlogos__grid img {
-    width: 3rem;
-
-}
 
 /****** End success  styles ******/

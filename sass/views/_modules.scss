@@ -1,11 +1,13 @@
 /****** Begin  modules styles ******/
 
-.sectionModules img {
-    width: 30%;
-}
+.sectionModules{
+    & img {
+        width: 30%;
+    }
+    & h1 {
+        font-size: 1.7em;
+    }
+} 
 
-.sectionModules h1 {
-    font-size: 1.7em;
-}
 
 /****** End modules modules  styles ******/

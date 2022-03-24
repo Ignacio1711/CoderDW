@@ -7,10 +7,7 @@
     padding: 5px;
     box-shadow: 1px 1px darkgray;
     transition: background-color;
-
-}
-
-.btnAction:hover {
-    background-color: darkgray;
-
+    &:hover {
+        background-color: darkgray;
+    }
 }

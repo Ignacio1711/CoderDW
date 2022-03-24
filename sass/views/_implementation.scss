@@ -1,15 +1,16 @@
 /****** Begin  implementation styles ******/
 
-.implementationH1 h1 {
-    font-size: 1.7em;
-}
+.implementation{
+    &H1 h1 {
+        font-size: 1.7em;
+    }
+    &H2 {
+        color: orange;
+    }
+    &H3 {
+        color: darkgrey;
+    }
 
-.implementationH2 {
-    color: orange;
-}
-
-.implementationH3 {
-    color: darkgrey;
 }
 
 .plan img {
