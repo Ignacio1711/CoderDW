@@ -1,0 +1,20 @@
+/*normalize*/
+@import './base/reset';
+
+/*variables and mixins*/
+@import './utilities/variables';
+@import './utilities/mixins';
+
+/*components*/
+@import './components/buttons';
+
+/*layout*/
+@import './layout/header';
+@import './layout/footer'; 
+
+/*views*/
+@import './views/home';
+@import './views/modules';
+@import './views/implementation';
+@import './views/success';
+@import './views/contact';

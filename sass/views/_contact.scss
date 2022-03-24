@@ -1,0 +1,32 @@
+/****** Begin  contact styles ******/
+
+.contactHeading {
+    color: coral;
+    font-weight: bold;
+
+}
+
+.contactHeading h1 {
+    color: black;
+    font-size: 1.7em;
+
+}
+
+.contactForm form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid coral;
+    border-radius: 5px;
+
+}
+
+.contactForm input,
+textarea {
+    margin: 10px;
+}
+
+.contactForm textarea {
+    height: 12rem;
+}
+
+/****** End contact  styles ******/

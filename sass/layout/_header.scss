@@ -1,0 +1,34 @@
+/******  Begin header styles ******/
+
+.header {
+    background-color: white;
+
+    &__nav {
+        text-align: center;
+    }
+}
+
+.headerContainer__logo img {
+    height: 50px;
+}
+
+.headerContainer__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+        display: inline-block;
+        padding: 0 20px;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        transition: border;
+        :hover {
+            background-color: orange;
+            border: 1px solid orange;
+            border-radius: 5px;
+            color: white;
+        }
+    }
+}

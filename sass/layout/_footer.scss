@@ -1,0 +1,39 @@
+/****** Begin  footer  section styles ******/
+
+footer {
+    background-color: darkslategray;
+    color: white;
+}
+
+.contactContainer img {
+    height: 50px;
+}
+
+
+.SocialContainer__logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.SocialContainer__logos figure {
+    margin-right: 1rem;
+}
+
+.socialContainer h3 {
+    margin-bottom: 10px;
+}
+
+.newsContainer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.legalContainer a {
+    text-decoration: none;
+    color: white;
+}
+
+/****** End footer section  styles ******/

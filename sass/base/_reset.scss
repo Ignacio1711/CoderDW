@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+/**** Globals ****/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+}
+
+main {
+    min-height: 70vh;
+}

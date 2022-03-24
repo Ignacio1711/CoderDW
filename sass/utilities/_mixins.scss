@@ -1,0 +1,17 @@
+/** Helpers **/
+
+.contentCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.sectionGap {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
