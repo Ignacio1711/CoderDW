@@ -1,14 +1,25 @@
 /****** Begin index principal section styles ******/
 
 .sectionPrincipal {
-    background-image: linear-gradient(to left, #6f6a65, #8f7253, #af7941, #cf7e2c, #f08109);
+    height: 100vh;
+    background: linear-gradient(45deg, rgba(243, 181, 110, 0.8), rgba(116, 42, 5, 0.8)), url("../image/sgoSuite/saas-bg.jpg") center top no-repeat;
+    background-size: cover;
+    position: relative;
     img {
-        width: 70%;
+        width: 30%;
         text-align: center;
     }
     h1 {
-        width: 80%;
-        font-size: 1.7em;
+        width: 70%;
+        font-size: 4em;
+        font-size: 2.5em;
+        color: white;
+    }
+    p {
+    width: 70%;
+    font-size: 2em;
+    font-size: 1.5em;
+    color: white;
     }
 }
 
@@ -17,23 +28,33 @@
 /****** Begin index features  section styles ******/
 
 .sectionFeatures{
+    &__heading{
+        width: 80%;
+        font-size: 1.6em;
+    }
     p {
         width: 80%;
     }
     img {
-        width: 20%;
+        width: 40%;
         transition: width 0.5s;
+    }
+    h3 {
+        color: orange;
     }
 } 
 
 /****** End index features section  styles ******/
 
 
-
 /****** Begin index advantages  section styles ******/
 
 .sectionAdvantages {
-    background-image: linear-gradient(to right, #6f6a65, #8f7253, #af7941, #cf7e2c, #f08109);
+    height: 60vh;
+    background-color: #faf8f7;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     img {
         width: 70%;
         border-radius: 5px;
@@ -41,7 +62,14 @@
     h3,p {
     width: 80%;
     }
+    &__narrowContainer{
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+    }
 }
+
+
 
 /****** End index advantages section  styles ******/
 

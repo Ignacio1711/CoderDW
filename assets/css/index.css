@@ -44,6 +44,16 @@ main {
   transition: background-color; }
   .btnAction:hover {
     background-color: darkgray; }
+  .btnAction__hero {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 1px 1px darkgray;
+    transition: background-color; }
+    .btnAction__hero:hover {
+      background-color: darkgray; }
 
 /*layout*/
 /******  Begin header styles ******/
@@ -104,32 +114,57 @@ footer {
 /*views*/
 /****** Begin index principal section styles ******/
 .sectionPrincipal {
-  background-image: linear-gradient(to left, #6f6a65, #8f7253, #af7941, #cf7e2c, #f08109); }
+  height: 100vh;
+  background: linear-gradient(45deg, rgba(243, 181, 110, 0.8), rgba(116, 42, 5, 0.8)), url("../image/sgoSuite/saas-bg.jpg") center top no-repeat;
+  background-size: cover;
+  position: relative; }
   .sectionPrincipal img {
-    width: 70%;
+    width: 30%;
     text-align: center; }
   .sectionPrincipal h1 {
-    width: 80%;
-    font-size: 1.7em; }
+    width: 70%;
+    font-size: 4em;
+    font-size: 2.5em;
+    color: white; }
+  .sectionPrincipal p {
+    width: 70%;
+    font-size: 2em;
+    font-size: 1.5em;
+    color: white; }
 
 /****** End index principal section  styles ******/
 /****** Begin index features  section styles ******/
+.sectionFeatures__heading {
+  width: 80%;
+  font-size: 1.6em; }
+
 .sectionFeatures p {
   width: 80%; }
 
 .sectionFeatures img {
-  width: 20%;
+  width: 40%;
   transition: width 0.5s; }
+
+.sectionFeatures h3 {
+  color: orange; }
 
 /****** End index features section  styles ******/
 /****** Begin index advantages  section styles ******/
 .sectionAdvantages {
-  background-image: linear-gradient(to right, #6f6a65, #8f7253, #af7941, #cf7e2c, #f08109); }
+  height: 60vh;
+  background-color: #faf8f7;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
   .sectionAdvantages img {
     width: 70%;
     border-radius: 5px; }
   .sectionAdvantages h3, .sectionAdvantages p {
     width: 80%; }
+  .sectionAdvantages__narrowContainer {
+    width: 70%;
+    display: flex;
+    flex-direction: row; }
 
 /****** End index advantages section  styles ******/
 /****** Begin index testimonials  section styles ******/
