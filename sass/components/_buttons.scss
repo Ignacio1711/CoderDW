@@ -13,6 +13,10 @@
    &__hero {
         background: transparent;
         color: white;
+        text-decoration: none;
+        :visited{
+            text-decoration: none;
+        }
         border: 1px solid white;
         border-radius: 15px;
         padding: 5px;
@@ -20,6 +24,7 @@
         transition: background-color;
         &:hover{
             background-color: darkgray;
+            color: white;
         }
     }
 }

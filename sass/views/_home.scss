@@ -46,6 +46,51 @@
 
 /****** End index features section  styles ******/
 
+/* Call To Action Section
+--------------------------------*/
+#call-to-action {
+    overflow: hidden;
+    background: linear-gradient(rgba(235, 138, 29, 0.6), rgba(121, 31, 4, 0.6)), url(../../assets/image/advantages/call-to-action-bg.jpg) fixed center center;
+    background-size: cover;
+    padding: 80px 0;
+  }
+  #call-to-action .cta-title {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  #call-to-action .cta-text {
+    color: #fff;
+  }
+  @media (min-width: 769px) {
+    #call-to-action .cta-btn-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+  #call-to-action .cta-btn {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 25px;
+    transition: background 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  #call-to-action .cta-btn:hover {
+    background: #1dc8cd;
+    border: 2px solid #1dc8cd;
+  }
+  
+
+
+
+
 
 /****** Begin index advantages  section styles ******/
 
@@ -56,7 +101,7 @@
     align-items: center;
     text-align: center;
     img {
-        width: 70%;
+        width: 100%;
         border-radius: 5px;
     }
     h3,p {
@@ -72,6 +117,10 @@
 
 
 /****** End index advantages section  styles ******/
+
+
+
+
 
 
 /****** Begin index testimonials  section styles ******/
