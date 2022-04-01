@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*normalize*/
 * {
   margin: 0;
@@ -18,6 +19,49 @@ main {
   min-height: 70vh; }
 
 /*variables and mixins*/
+/* Maps */
+.sp-xtra-large {
+  padding: 0 3rem; }
+
+.sp-large {
+  padding: 0 2rem; }
+
+.sp-small {
+  padding: 0 1.5rem; }
+
+.sp-xtra-small {
+  padding: 0 1rem; }
+
+.mg-xtra-large {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+.mg-large {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.mg-small {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
+
+.mg-xtra-small {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+.fs-xtra-large {
+  font-size: 3rem; }
+
+.fs-large {
+  font-size: 2rem; }
+
+.fs-small {
+  font-size: 1.5rem; }
+
+.fs-xtra-small {
+  font-size: 1rem; }
+
+/* End Maps*/
+/*Mixins*/
 /** Helpers **/
 .contentCenter {
   display: flex;
@@ -27,10 +71,6 @@ main {
 
 .textCenter {
   text-align: center; }
-
-.sectionGap {
-  margin-top: 20px;
-  margin-bottom: 20px; }
 
 /*components*/
 /*  Button get a demo */
@@ -118,7 +158,7 @@ footer {
 /*views*/
 /****** Begin index principal section styles ******/
 .sectionPrincipal {
-  height: 100vh;
+  height: auto;
   background: linear-gradient(45deg, rgba(243, 181, 110, 0.8), rgba(116, 42, 5, 0.8)), url("../image/sgoSuite/saas-bg.jpg") center top no-repeat;
   background-size: cover;
   position: relative; }
@@ -127,13 +167,9 @@ footer {
     text-align: center; }
   .sectionPrincipal h1 {
     width: 70%;
-    font-size: 4em;
-    font-size: 2.5em;
     color: white; }
   .sectionPrincipal p {
     width: 70%;
-    font-size: 2em;
-    font-size: 1.5em;
     color: white; }
 
 /****** End index principal section  styles ******/
@@ -152,12 +188,20 @@ footer {
 .sectionFeatures h3 {
   color: orange; }
 
+.sectionDivider {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(0deg, #99000A 0%, #99000A 100%);
+  margin: 0 auto;
+  margin-bottom: 20px; }
+
 /****** End index features section  styles ******/
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
   overflow: hidden;
-  background: linear-gradient(rgba(235, 138, 29, 0.6), rgba(121, 31, 4, 0.6)), url(../../assets/image/advantages/call-to-action-bg.jpg) fixed center center;
+  background: linear-gradient(rgba(255, 89, 25, 0.6), rgba(150, 0, 10, 0.6)), url(../../assets/image/advantages/call-to-action-bg.jpg) fixed center center;
   background-size: cover;
   padding: 80px 0; }
 
@@ -172,8 +216,9 @@ footer {
 @media (min-width: 769px) {
   #call-to-action .cta-btn-container {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: flex-end; } }
+    /* aplicación del mixin*/ } }
 
 #call-to-action .cta-btn {
   font-family: "Montserrat", sans-serif;
@@ -188,26 +233,23 @@ footer {
   border: 2px solid #fff;
   color: #fff; }
 
-#call-to-action .cta-btn:hover {
-  background: #1dc8cd;
-  border: 2px solid #1dc8cd; }
-
 /****** Begin index advantages  section styles ******/
 .sectionAdvantages {
-  height: 60vh;
+  height: auto;
   background-color: #faf8f7;
+  display: flex;
+  direction: row;
   justify-content: center;
   align-items: center;
+  /* aplicación del mixin*/
   text-align: center; }
+  .sectionAdvantages__narrowContainer {
+    width: 70%; }
   .sectionAdvantages img {
     width: 100%;
     border-radius: 5px; }
   .sectionAdvantages h3, .sectionAdvantages p {
     width: 80%; }
-  .sectionAdvantages__narrowContainer {
-    width: 70%;
-    display: flex;
-    flex-direction: row; }
 
 /****** End index advantages section  styles ******/
 /****** Begin index testimonials  section styles ******/

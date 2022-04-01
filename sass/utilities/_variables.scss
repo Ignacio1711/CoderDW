@@ -1,0 +1,51 @@
+/* Maps */
+
+$spacings: (
+    xtra-large: 3rem,
+    large: 2rem,
+    small: 1.5rem,
+    xtra-small: 1rem
+);
+
+@each $var , $val  in $spacings {
+    .sp-#{$var} {
+        padding: 0 $val;
+    }
+}
+
+$margins: (
+    xtra-large: 3rem,
+    large: 2rem,
+    small: 1.5rem,
+    xtra-small: 1rem
+);
+
+@each $var , $val  in $margins {
+    .mg-#{$var} {
+        margin-top: $val;
+        margin-bottom: $val;
+    }
+}
+
+$sizings: (
+    xtra-large: 3em,
+    large: 2em,
+    small: 1.5em,
+    xtra-small: 1em
+);
+
+@each $var , $val  in $margins {
+    .fs-#{$var} {
+        font-size: $val;
+    }
+}
+
+$colors : (
+    naranja-hexa: #FF5919,
+    naranja-rgb: 255,89,25,
+    rojo-hexa: #FF2626,
+    bordo-hexa: #99000A,
+    bordo-rgb: 150,0,10,
+)
+
+/* End Maps*/

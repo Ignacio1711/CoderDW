@@ -1,3 +1,13 @@
+/*Mixins*/ 
+
+@mixin flex ($direction, $justify, $align){
+    display: flex;
+    direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    
+}
+
 /** Helpers **/
 
 .contentCenter {
@@ -11,7 +21,3 @@
     text-align: center;
 }
 
-.sectionGap {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}

@@ -1,7 +1,7 @@
 /****** Begin index principal section styles ******/
 
 .sectionPrincipal {
-    height: 100vh;
+    height: auto;
     background: linear-gradient(45deg, rgba(243, 181, 110, 0.8), rgba(116, 42, 5, 0.8)), url("../image/sgoSuite/saas-bg.jpg") center top no-repeat;
     background-size: cover;
     position: relative;
@@ -11,14 +11,10 @@
     }
     h1 {
         width: 70%;
-        font-size: 4em;
-        font-size: 2.5em;
         color: white;
     }
     p {
     width: 70%;
-    font-size: 2em;
-    font-size: 1.5em;
     color: white;
     }
 }
@@ -44,13 +40,22 @@
     }
 } 
 
+.sectionDivider {
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(0deg,  map-get($colors, bordo-hexa) 0%, map-get($colors, bordo-hexa)  100%);
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
 /****** End index features section  styles ******/
 
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
     overflow: hidden;
-    background: linear-gradient(rgba(235, 138, 29, 0.6), rgba(121, 31, 4, 0.6)), url(../../assets/image/advantages/call-to-action-bg.jpg) fixed center center;
+    background: linear-gradient(rgba(map-get($colors, naranja-rgb), 0.6), rgba(map-get($colors, bordo-rgb), 0.6)), url(../../assets/image/advantages/call-to-action-bg.jpg) fixed center center;
     background-size: cover;
     padding: 80px 0;
   }
@@ -64,9 +69,7 @@
   }
   @media (min-width: 769px) {
     #call-to-action .cta-btn-container {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
+       @include flex (null, flex-end, center) ; /* aplicación del mixin*/
     }
   }
   #call-to-action .cta-btn {
@@ -82,23 +85,14 @@
     border: 2px solid #fff;
     color: #fff;
   }
-  #call-to-action .cta-btn:hover {
-    background: #1dc8cd;
-    border: 2px solid #1dc8cd;
-  }
   
-
-
-
-
-
+  
 /****** Begin index advantages  section styles ******/
 
 .sectionAdvantages {
-    height: 60vh;
+    height: auto;
     background-color: #faf8f7;
-    justify-content: center;
-    align-items: center;
+    @include flex (row, center, center); /* aplicación del mixin*/
     text-align: center;
     img {
         width: 100%;
@@ -107,20 +101,10 @@
     h3,p {
     width: 80%;
     }
-    &__narrowContainer{
-        width: 70%;
-        display: flex;
-        flex-direction: row;
-    }
+    
 }
 
-
-
 /****** End index advantages section  styles ******/
-
-
-
-
 
 
 /****** Begin index testimonials  section styles ******/
