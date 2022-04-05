@@ -17,6 +17,13 @@
     align-items: center;
 }
 
+.contentCenterV {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .textCenter {
     text-align: center;
 }

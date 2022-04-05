@@ -17,35 +17,60 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/index.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./assets/css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+
     <title>SGO-Suite | Inicio</title>
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid px-0">
         <div class="row">
             <div class="col-md-12 px-0">
                 <header class="container-fluid px-0 header">
-                    <nav class="row header__nav">
-                        <div class="col-md-6 px-0 headerContainer__logo">
+                    <nav class="row navbar navbar-expand-md header__nav">
+                        <div class="col-md-4 px-0 headerContainer__logo">
                             <a href="index.html">
                                 <picture>
                                     <img src="./assets/image/logo.png" alt="Logo Empresa">
                                 </picture>
                             </a>
                         </div>
-                        <div class="col-md-6 px-0  headerContainer__menu">
-                            <ul class="">
-                                <li class=""> <a href="./assets/pages/modulos.html">Módulos</a></li>
-                                <li class=""><a href="./assets/pages/implementacion.html">Implementación</a>
-                                </li>
-                                <li class=""><a href="./assets/pages/exito.html">Casos de Éxito</a></li>
-                                <li class=""><a href="./assets/pages/contacto.html">Contacto</a></li>
-                                <li class="">
-                                    <input type="button" value="Obtén una demo" class="btnAction">
-                                </li>
-                            </ul>
+                        <div class="col-md-2 px-0  headerContainer__menu">
+                            <!-- Toggler/collapsibe Button -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#collapsibleNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
                         </div>
+                        <div class="col-md-6 px-0  headerContainer__menu">
+                            <!-- Navbar links -->
+                            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a href="./assets/pages/modulos.html">Módulos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="./assets/pages/implementacion.html">Implementación</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="./assets/pages/exito.html">Casos de Éxito</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="./assets/pages/contacto.html">Contacto</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <input type="button" value="Obtén una demo" class="btnAction">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </nav>
                 </header>
             </div>
@@ -60,13 +85,11 @@
                                 aplicación en la nube
                                 con distintos módulos que se ajustan a sus necesidades.</p>
                             <a href="#sectionPrincipal" class="btnAction__hero mg-large">Conozca más...</a>
-                        </div>
-                        <div class="col-md-12 col-12 contentCenter textCenter">
-                            <img src="./assets/image/sgoSuite/sgo_suite.png"
+                               <img src="./assets/image/sgoSuite/sgo_suite.png"
                                 alt="Monitor y Movil con pantalla de la aplicación">
                         </div>
                     </section>
-                    <section class="row">
+                    <section class="row ">
                         <div class="container" id="sectionPrincipal">
                             <div class="col-md-12 sectionFeatures textCenter contentCenter mg-large">
                                 <h2>CARACTERÍSTICAS</h2>
@@ -272,63 +295,63 @@
             </section>
             </main>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 px-0">
-            <footer class="container-fluid">
-                <div class="row">
-                    <div class="col-md-4 contactContainer textCenter contentCenter">
-                        <figure>
-                            <img src="./assets/image/logo_blanco.png" alt="logo empresa">
-                        </figure>
-                        <h3>Donde encontrarnos</h3>
-                        <p>Calle 1 entre 2 y 3</p>
-                        <p>Gualeguaychú - Entre Ríos (2820)</p>
-                        <p>555-2255</p>
-                        <p>info@email.com</p>
-                    </div>
-                    <div class="col-md-4 textCenter contentCenter">
-                        <h3>Seguinos</h3>
-                        <div class="SocialContainer__logos">
+
+        <div class="row">
+            <div class="col-md-12 px-0">
+                <footer class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4 contactContainer textCenter contentCenter">
                             <figure>
-                                <a href="https://linkedin.com"><img src="./assets/image/social/linkedin.jpg"
-                                        alt="linkedin" height="36px" width="36px"></a>
+                                <img src="./assets/image/logo_blanco.png" alt="logo empresa">
                             </figure>
-                            <figure>
-                                <a href="https://facebook.com"><img src="./assets/image/social/facebook.jpg"
-                                        alt="facebook" height="36px" width="36px"></a>
-                            </figure>
-                            <figure>
-                                <a href="https://twitter.com"><img src="./assets/image/social/twitter.png" alt="twitter"
-                                        height="36px" width="36px"></a>
-                            </figure>
-                            <figure>
-                                <a href="https://youtube.com"><img src="./assets/image/social/youtube.png" alt="youtube"
-                                        height="36px" width="36px"></a>
-                            </figure>
+                            <h3>Donde encontrarnos</h3>
+                            <p>Calle 1 entre 2 y 3</p>
+                            <p>Gualeguaychú - Entre Ríos (2820)</p>
+                            <p>555-2255</p>
+                            <p>info@email.com</p>
+                        </div>
+                        <div class="col-md-4 textCenter contentCenter">
+                            <h3>Seguinos</h3>
+                            <div class="SocialContainer__logos">
+                                <figure>
+                                    <a href="https://linkedin.com"><img src="./assets/image/social/linkedin.jpg"
+                                            alt="linkedin" height="36px" width="36px"></a>
+                                </figure>
+                                <figure>
+                                    <a href="https://facebook.com"><img src="./assets/image/social/facebook.jpg"
+                                            alt="facebook" height="36px" width="36px"></a>
+                                </figure>
+                                <figure>
+                                    <a href="https://twitter.com"><img src="./assets/image/social/twitter.png"
+                                            alt="twitter" height="36px" width="36px"></a>
+                                </figure>
+                                <figure>
+                                    <a href="https://youtube.com"><img src="./assets/image/social/youtube.png"
+                                            alt="youtube" height="36px" width="36px"></a>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-md-4 newsContainer textCenter contentCenter">
+                            <h3>Recibe nuestras novedades</h3>
+                            <p>Suscríbete a nuestro newsletter para recibir las ultimas novedades de SGO-Suite</p>
+                            <form action="" class="">
+                                <input type="text" placeholder="Nombre y apellido">
+                                <input type="email" placeholder="Email">
+                                <input type="submit" value="Suscribirse" class="btnAction">
+                            </form>
                         </div>
                     </div>
-                    <div class="col-md-4 newsContainer textCenter contentCenter">
-                        <h3>Recibe nuestras novedades</h3>
-                        <p>Suscríbete a nuestro newsletter para recibir las ultimas novedades de SGO-Suite</p>
-                        <form action="" class="">
-                            <input type="text" placeholder="Nombre y apellido">
-                            <input type="email" placeholder="Email">
-                            <input type="submit" value="Suscribirse" class="btnAction">
-                        </form>
+                    <div class="row">
+                        <div class="col-md-12 textCenter legalContainer">
+                            <a href="#">2022 - SGO-Suite - Todos los derechos reservados</a>
+                            <a href="#">Términos & Privacidad - </a>
+                            <a href="#">Políticas de cookies</a>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 textCenter legalContainer">
-                        <a href="#">2022 - SGO-Suite - Todos los derechos reservados</a>
-                        <a href="#">Términos & Privacidad - </a>
-                        <a href="#">Políticas de cookies</a>
-                    </div>
-                </div>
 
-            </footer>
+                </footer>
+            </div>
         </div>
-    </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">

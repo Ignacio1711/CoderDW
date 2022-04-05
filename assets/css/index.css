@@ -13,10 +13,17 @@ ul {
 /**** Globals ****/
 body {
   font-family: 'Montserrat', sans-serif;
-  min-height: 100vh; }
+  min-height: 100vh;
+  overflow-x: hidden; }
 
 main {
   min-height: 70vh; }
+
+button:not(:disabled),
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled) {
+  cursor: default; }
 
 /*variables and mixins*/
 /* Maps */
@@ -48,6 +55,22 @@ main {
   margin-top: 1rem;
   margin-bottom: 1rem; }
 
+.mg-x-xtra-large {
+  margin-right: 3rem;
+  margin-left: 3rem; }
+
+.mg-x-large {
+  margin-right: 2rem;
+  margin-left: 2rem; }
+
+.mg-x-small {
+  margin-right: 1.5rem;
+  margin-left: 1.5rem; }
+
+.mg-x-xtra-small {
+  margin-right: 1rem;
+  margin-left: 1rem; }
+
 .fs-xtra-large {
   font-size: 3rem; }
 
@@ -66,6 +89,12 @@ main {
 .contentCenter {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.contentCenterV {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center; }
 
@@ -126,6 +155,19 @@ main {
       border-radius: 5px;
       color: white; }
 
+.navbar {
+  height: auto; }
+
+.nav-link {
+  cursor: default; }
+
+.navbar-toggler-icon {
+  border: 2px solid grey;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,89,25, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+
+.navbar-toggler:focus {
+  box-shadow: none; }
+
 /****** Begin  footer  section styles ******/
 footer {
   background: linear-gradient(#070707, #646262);
@@ -158,7 +200,7 @@ footer {
 /*views*/
 /****** Begin index principal section styles ******/
 .sectionPrincipal {
-  height: 100vh;
+  height: auto;
   background: linear-gradient(45deg, rgba(243, 181, 110, 0.8), rgba(116, 42, 5, 0.8)), url("../image/sgoSuite/saas-bg.jpg") center top no-repeat;
   background-size: cover;
   position: relative; }
@@ -290,11 +332,28 @@ footer {
 
 /****** End index testimonials section  styles ******/
 /****** Begin  modules styles ******/
-.sectionModules img {
-  width: 30%; }
-
-.sectionModules h1 {
-  font-size: 1.7em; }
+.sectionModules {
+  width: 80%; }
+  .sectionModules__headings h1 {
+    font-size: 2em; }
+  .sectionModules__headings h3 {
+    font-size: xtra-small;
+    color: #535252;
+    font-style: italic; }
+    .sectionModules__headings h3 span {
+      font-weight: bold; }
+  .sectionModules__card {
+    box-shadow: 4px 4px 8px #cacaca, -4px -4px 8px white; }
+    .sectionModules__card h4 {
+      font-size: 1em; }
+    .sectionModules__card p {
+      width: 80%; }
+    .sectionModules__card span {
+      font-weight: bold;
+      font-style: italic; }
+    .sectionModules__card__icon i {
+      font-size: 4em;
+      color: orange; }
 
 /****** End modules modules  styles ******/
 /****** Begin  implementation styles ******/

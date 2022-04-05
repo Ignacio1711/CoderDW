@@ -27,11 +27,21 @@ $margins: (
     }
 }
 
+@each $var , $val  in $margins {
+    .mg-x-#{$var} {
+        margin-right: $val;
+        margin-left: $val;
+    }
+}
+
+
 $sizings: (
+    icon-size: 4em,
     xtra-large: 3em,
     large: 2em,
     small: 1.5em,
-    xtra-small: 1em
+    xtra-small: 1em,
+    
 );
 
 @each $var , $val  in $margins {
@@ -45,7 +55,8 @@ $colors : (
     naranja-rgb: "255,89,25" ,
     rojo-hexa: #FF2626,
     bordo-hexa: #99000A,
-    bordo-rgb: "150,0,10"
+    bordo-rgb: "150,0,10",
+    gris-bg-section: #faf8f7
 )
 
 /* End Maps*/

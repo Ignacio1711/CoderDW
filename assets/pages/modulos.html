@@ -5,15 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SGO SUITE cuenta con módulos especialmente diseñados para la administración de sistemas de gestión normalizados." >
-    <meta name="keywords" content="NO CONFORMIDADES, GESTIÓN DE RIESGOS, OPORTUNIDADES DE MEJORA, MATRIZ LEGAL, EVALUACION DE PROVEEDORES, PERSONAL, COMPETENCIAS, AUDITORÍAS">
+    <meta name="description"
+        content="SGO SUITE cuenta con módulos especialmente diseñados para la administración de sistemas de gestión normalizados.">
+    <meta name="keywords"
+        content="NO CONFORMIDADES, GESTIÓN DE RIESGOS, OPORTUNIDADES DE MEJORA, MATRIZ LEGAL, EVALUACION DE PROVEEDORES, PERSONAL, COMPETENCIAS, AUDITORÍAS">
     <link rel="shortcut icon" href="/assets/image/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,100;1,400&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <title>SGO Suite | Módulos</title>
 </head>
 
@@ -22,190 +30,193 @@
         <div class="row">
             <div class="col-md-12 px-0">
                 <header class="container-fluid px-0 header">
-                    <nav class="row header__nav">
-                        <div class="col-md-6 px-0 headerContainer__logo">
+                    <nav class="row navbar navbar-expand-md header__nav">
+                        <div class="col-md-4 px-0 headerContainer__logo">
                             <a href="../../index.html">
                                 <picture>
-                                    <img src="../image/logo.png" alt="Logo Empresa">
+                                    <img src="../../assets/image/logo.png" alt="Logo Empresa">
                                 </picture>
                             </a>
                         </div>
-                        <div class="col-md-6 px-0  headerContainer__menu">
-                            <ul class="">
-                                <li class=""> <a href="modulos.html">Módulos</a></li>
-                                <li class=""><a href="implementacion.html">Implementación</a>
-                                </li>
-                                <li class=""><a href="exito.html">Casos de Éxito</a></li>
-                                <li class=""><a href="contacto.html">Contacto</a></li>
-                                <li class="">
-                                    <input type="button" value="Obtén una demo" class="btnAction">
-                                </li>
-                            </ul>
+                        <div class="col-md-2 px-0  headerContainer__menu">
+                            <!-- Toggler/collapsibe Button -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#collapsibleNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
                         </div>
+                        <div class="col-md-6 px-0  headerContainer__menu">
+                            <!-- Navbar links -->
+                            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a href="modulos.html">Módulos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="implementacion.html">Implementación</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="exito.html">Casos de Éxito</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="contacto.html">Contacto</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <input type="button" value="Obtén una demo" class="btnAction">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </nav>
                 </header>
             </div>
         </div>
-        <div class="row sectionGap">
+        <div class="row mg-large">
             <div class="col-md-12">
-                <main class="container-fluid px-0 ">
-                    <div class="row sectionModules  textCenter  contentCenter sectionGap">
-                        <div class="col-md-12">
-                            <h1>Accede a los módulos necesarios cuando lo creas más conveniente</h1>
+                <main class="container-fluid px-0  sectionModules textCenter contentCenter ">
+                    <div class="row   textCenter  contentCenter mg-large">
+                        <div class="col-md-12 sectionModules__headings">
+                            <h1>Conoce los módulos que forman parte de SGO-Suite</h1>
+                            <h3 class="fs-small">Al ser un software modularizado, puedes implementar cada módulo en forma independiente y
+                                cuando lo creas necesario. Cuántos más módulos tengas disponibles, más integrado estará
+                                tu <span>sistema de gestión.</span> </h3>
                         </div>
                     </div>
-                    <div class="row sectionModules  textCenter sectionGap">
-                        <div class="col-md-3 textCenter contentCenter">
-                            <figure>
-                                <img src="../image/características/feature.png" alt="modulo gestión">
-                            </figure>
-                            <h3>Gestión</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloremque
-                                recusandae
-                                explicabo necessitatibus itaque aperiam, exercitationem, voluptas sit rem nihil vel
-                                ab
-                                dolore
-                                suscipit atque eaque illum aut assumenda amet!</p>
+                    <div class="row text-center">
+                        <h2>Gestión Normativa</h2>
+                        <span class="sectionDivider"></span>
+                    </div>
+                    <div class="row  textCenter mg-large">
+                        <div class="col-md-3  sectionModules__card  textCenter contentCenter ">
+                            <div class="sectionModules__card__icon">
+                                <i class="bi bi-journal-text"></i>
+                            </div>
+                            <h4>No Conformidades</h4>
+                            <p>Gestiona los desvíos de tu organización de una forma eficiente y colaborativa. Mantente
+                                actualizado en tus tareas y pendientes con los sistemas de notificaciones.</p>
                         </div>
-                        <div class="col-md-3 sectionModules textCenter contentCenter">
-                            <figure>
-                                <img src="../image/características/feature.png" alt="modulo gestión">
-                            </figure>
-                            <h3>Gestión</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloremque
-                                recusandae
-                                explicabo necessitatibus itaque aperiam, exercitationem, voluptas sit rem nihil vel
-                                ab
-                                dolore
-                                suscipit atque eaque illum aut assumenda amet!</p>
+                        <div class="col-md-3 sectionModules__card textCenter contentCenter">
+                            <div class="sectionModules__card__icon">
+                                <i class="bi bi-journal-x"></i>
+                            </div>
+                            <h4>Observaciones | Incidentes</h4>
+                            <p>Gestiona el registro de desvío menores de tu organización de una forma eficiente y
+                                colaborativa. Integra este tipo de desvios con No Conformidades.</p>
+
                         </div>
-                        <div class="col-md-3  sectionModules textCenter contentCenter">
-                            <figure>
-                                <img src="../image/características/feature.png" alt="modulo gestión">
-                            </figure>
-                            <h3>Gestión</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloremque
-                                recusandae
-                                explicabo necessitatibus itaque aperiam, exercitationem, voluptas sit rem nihil vel
-                                ab
-                                dolore
-                                suscipit atque eaque illum aut assumenda amet!</p>
+                        <div class="col-md-3 sectionModules__card   textCenter contentCenter">
+                            <div class="sectionModules__card__icon">
+                                <i class="bi bi-journal-medical"></i>
+                            </div>
+                            <h4>Oportunidades de mejora</h4>
+                            <p>Administra las mejoras identificadas en tu organización. Controla el progreso a través de
+                                acciones y asigna recursos para llevarlas a cabo.</p>
                         </div>
-                        <div class="col-md-3  textCenter contentCenter">
-                            <figure>
-                                <img src="../image/características/feature.png" alt="modulo gestión">
-                            </figure>
-                            <h3>Gestión</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloremque
-                                recusandae
-                                explicabo necessitatibus itaque aperiam, exercitationem, voluptas sit rem nihil vel
-                                ab
-                                dolore
-                                suscipit atque eaque illum aut assumenda amet!</p>
+                        <div class="col-md-3 sectionModules__card  textCenter contentCenter">
+                            <div class="sectionModules__card__icon">
+                                <i class="bi bi-journal-check"></i>
+                            </div>
+                            <h4>Auditorías</h4>
+                            <p>Registra y planifica las auditorías de tu organización, mantén a tus colaboradores
+                                informados de los sectores a ser auditados, fechas y planificación.</p>
                         </div>
                     </div>
-                    <div class="row sectionModules  textCenter sectionGap">
-                        <div class="col-md-3 textCenter contentCenter">
-                            <figure>
-                                <img src="../image/características/feature.png" alt="modulo gestión">
-                            </figure>
-                            <h3>Gestión</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloremque
-                                recusandae
-                                explicabo necessitatibus itaque aperiam, exercitationem, voluptas sit rem nihil vel
-                                ab
-                                dolore
-                                suscipit atque eaque illum aut assumenda amet!</p>
+                    <div class="row contentCenterV  textCenter mg-large">
+                        <div class="col-md-3  sectionModules__card  textCenter contentCenter ">
+                            <div class="sectionModules__card__icon">
+                                <i class="bi bi-file-earmark-binary"></i>
+                            </div>
+                            <h4>Gestión documental</h4>
+                            <p>Facilita el flujo de elaboración, revisión, aprobación y publicación de los documentos del <span>Sistema de Gestión</span> .</p>
                         </div>
-                        <div class="col-md-3  textCenter contentCenter">
-                            <figure>
-                                <img src="../image/características/feature.png" alt="modulo gestión">
-                            </figure>
-                            <h3>Gestión</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloremque
-                                recusandae
-                                explicabo necessitatibus itaque aperiam, exercitationem, voluptas sit rem nihil vel
-                                ab
-                                dolore
-                                suscipit atque eaque illum aut assumenda amet!</p>
+                        <div class="col-md-3 sectionModules__card textCenter contentCenter">
+                            <div class="sectionModules__card__icon">
+                                <i class="bi bi-check2-circle"></i>
+                            </div>
+                            <h4>Acciones preventivas</h4>
+                            <p>Gestiona el registro de desvío menores de tu organización de una forma eficiente y
+                                colaborativa. Integra este tipo de desvios con No Conformidades.</p>
                         </div>
-                        <div class="col-md-3  textCenter contentCenter">
-                            <figure>
-                                <img src="../image/características/feature.png" alt="modulo gestión">
-                            </figure>
-                            <h3>Gestión</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloremque
-                                recusandae
-                                explicabo necessitatibus itaque aperiam, exercitationem, voluptas sit rem nihil vel
-                                ab
-                                dolore
-                                suscipit atque eaque illum aut assumenda amet!</p>
+                        <div class="col-md-3 sectionModules__card   textCenter contentCenter">
+                            <div class="sectionModules__card__icon">
+                                <i class="bi bi-speedometer"></i>
+                            </div>
+                            <h4>Revisión por la dirección</h4>
+                            <p>Administra las mejoras identificadas en tu organización. Controla el progreso a través de
+                                acciones y asigna recursos para llevarlas a cabo.</p>
                         </div>
-                        <div class="col-md-3  textCenter contentCenter">
-                            <figure>
-                                <img src="../image/características/feature.png" alt="modulo gestión">
-                            </figure>
-                            <h3>Gestión</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloremque
-                                recusandae
-                                explicabo necessitatibus itaque aperiam, exercitationem, voluptas sit rem nihil vel
-                                ab
-                                dolore
-                                suscipit atque eaque illum aut assumenda amet!</p>
+                        <div class="col-md-3 sectionModules__card   textCenter contentCenter">
+                            <div class="sectionModules__card__icon">
+                                <i class="bi bi-speedometer"></i>
+                            </div>
+                            <h4>Matriz Legal</h4>
+                            <p>Administra las mejoras identificadas en tu organización. Controla el progreso a través de
+                                acciones y asigna recursos para llevarlas a cabo.</p>
                         </div>
                     </div>
-                    <div class="row sectionModules  textCenter sectionGap">
-                        <div class="col-md-3 textCenter contentCenter">
-                            <figure>
-                                <img src="../image/características/feature.png" alt="modulo gestión">
-                            </figure>
-                            <h3>Gestión</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloremque
-                                recusandae
-                                explicabo necessitatibus itaque aperiam, exercitationem, voluptas sit rem nihil
-                                vel
-                                ab
-                                dolore
-                                suscipit atque eaque illum aut assumenda amet!</p>
+                    <div class="row   textCenter mg-large">
+                        <h2>Gestión Organizacional</h2>
+                        <span class="sectionDivider"></span>
+                    </div>
+                    <div class="row   textCenter mg-large">
+                        <div class="col-md-3  sectionModules__card  textCenter contentCenter ">
+                            <div class="sectionModules__card__icon">
+                                <i class="bi bi-person-lines-fill"></i>
+                            </div>
+                            <h4>Personal</h4>
+                            <p>Administra el personal de tu organización, los programas de competencias, evaluaciones, observaciones de desempeño, perfiles de puestos de trabajo.</p>
                         </div>
-                        <div class="col-md-3  textCenter contentCenter">
-                            <figure>
-                                <img src="../image/características/feature.png" alt="modulo gestión">
-                            </figure>
-                            <h3>Gestión</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloremque
-                                recusandae
-                                explicabo necessitatibus itaque aperiam, exercitationem, voluptas sit rem nihil
-                                vel
-                                ab
-                                dolore
-                                suscipit atque eaque illum aut assumenda amet!</p>
+                        <div class="col-md-3 sectionModules__card textCenter contentCenter">
+                            <div class="sectionModules__card__icon">
+                                <i class="bi bi-shop"></i>
+                            </div>
+                            <h4>Gestión de proveedores</h4>
+                            <p>Evalúa a tus proveedores a través de categorías y criterios totalmente configurables. Notificalos de las evaluaciones e integra con los desvíos hallados. </p>
                         </div>
-                        <div class="col-md-3  textCenter contentCenter">
-                            <figure>
-                                <img src="../image/características/feature.png" alt="modulo gestión">
-                            </figure>
-                            <h3>Gestión</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloremque
-                                recusandae
-                                explicabo necessitatibus itaque aperiam, exercitationem, voluptas sit rem nihil
-                                vel
-                                ab
-                                dolore
-                                suscipit atque eaque illum aut assumenda amet!</p>
+                            <div class="col-md-3 sectionModules__card   textCenter contentCenter">
+                            <div class="sectionModules__card__icon">
+                                <i class="bi bi-sliders"></i>
+                            </div>
+                            <h4>Gestión de equipos</h4>
+                            <p>Lleva el control del estado de tus equipos. Administra mantenimientos, verificaciones, calibraciones y tareas correctivas. </p>
                         </div>
-                        <div class="col-md-3  textCenter contentCenter">
-                            <figure>
-                                <img src="../image/características/feature.png" alt="modulo gestión">
-                            </figure>
-                            <h3>Gestión</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloremque
-                                recusandae
-                                explicabo necessitatibus itaque aperiam, exercitationem, voluptas sit rem nihil
-                                vel
-                                ab
-                                dolore
-                                suscipit atque eaque illum aut assumenda amet!</p>
+                        <div class="col-md-3 sectionModules__card  textCenter contentCenter">
+                            <div class="sectionModules__card__icon">
+                                <i class="bi bi-mailbox"></i>
+                            </div>
+                            <h4>Comunicaciones</h4>
+                            <p>Adminstra las comunicaciones internas como externas en tu organización. Establece responsable de respuestas e intégralas con las herramientas de gestión.</p>
+                        </div>
+                    </div>
+                    <div class="row   textCenter mg-large">
+                        <div class="col-md-3  sectionModules__card  textCenter contentCenter ">
+                            <div class="sectionModules__card__icon">
+                                <i class="bi bi-cart-check"></i>
+                            </div>
+                            <h4>Compras</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam corrupti qui voluptate minus officiis cum ex alias, molestiae impedit porro quis numquam. Accusantium eius quo commodi soluta illum laborum praesentium!</p>
+                        </div>
+                        <div class="col-md-3 sectionModules__card textCenter contentCenter">
+                            <div class="sectionModules__card__icon">
+                                <i class="bi bi-person-video2"></i>
+                            </div>
+                            <h4>Reuniones</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus porro quia dicta, saepe iure alias commodi animi magnam. Odit, distinctio modi corporis assumenda cumque laboriosam dolore labore vero! Reiciendis, dolore!</p>
+                        </div>
+                            <div class="col-md-3 sectionModules__card   textCenter contentCenter">
+                            <div class="sectionModules__card__icon">
+                                <i class="bi bi-bandaid"></i>
+                            </div>
+                            <h4>Seguridad y Salud Ocupacional</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam sed maiores minus error placeat officia deleniti. Saepe in labore at dignissimos necessitatibus quis, fugit facilis pariatur delectus vero ea earum!</p>
+                        </div>
+                        <div class="col-md-3 sectionModules__card  textCenter contentCenter">
+                            <div class="sectionModules__card__icon">
+                                <i class="bi bi-recycle"></i>
+                            </div>
+                            <h4>Medio Ambiente</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum distinctio sed ex adipisci? Suscipit quas sit veritatis explicabo voluptatem non ab, commodi nulla incidunt placeat, a molestias sint quaerat nihil?</p>
                         </div>
                     </div>
                 </main>
