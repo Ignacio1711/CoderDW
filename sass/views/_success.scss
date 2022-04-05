@@ -1,18 +1,40 @@
 /****** Begin  success styles ******/
 
 .successCases{
-    
-    & h1 {
-        font-size:  map-get($sizings, large )
+    width: 80%;
+    &__headings{
+        h1 {
+            font-size:  map-get($sizings, large )
+        }
+    } 
+    &__lastClients{
+        height: max-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-content: center;
+        flex-wrap: wrap;
+        box-shadow: 3px 3px 3px lightgray;
+        padding: map-get($spacings, small );
+        img{
+            display: inline-block;
+            width: 30%;
+        }
+        p{
+            font-size: map-get($sizings, xtra-small);
+            
+        }
     }
+    
 }
-
 .sectionlogos__grid {
     width: 80%;
     img {
-        width: 3rem;
+        width: 8rem;
+        filter: grayscale(1);
+        
     }
-}
+ }
 
 
 /****** End success  styles ******/

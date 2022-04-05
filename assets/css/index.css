@@ -397,13 +397,30 @@ footer {
 
 /****** End implementation  styles ******/
 /****** Begin  success styles ******/
-.successCases h1 {
-  font-size: 2em; }
+.successCases {
+  width: 80%; }
+  .successCases__headings h1 {
+    font-size: 2em; }
+  .successCases__lastClients {
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-content: center;
+    flex-wrap: wrap;
+    box-shadow: 3px 3px 3px lightgray;
+    padding: 1.5rem; }
+    .successCases__lastClients img {
+      display: inline-block;
+      width: 30%; }
+    .successCases__lastClients p {
+      font-size: 1em; }
 
 .sectionlogos__grid {
   width: 80%; }
   .sectionlogos__grid img {
-    width: 3rem; }
+    width: 8rem;
+    filter: grayscale(1); }
 
 /****** End success  styles ******/
 /****** Begin  contact styles ******/
