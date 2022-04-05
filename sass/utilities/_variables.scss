@@ -34,7 +34,6 @@ $margins: (
     }
 }
 
-
 $sizings: (
     icon-size: 4em,
     xtra-large: 3em,
@@ -44,7 +43,7 @@ $sizings: (
     
 );
 
-@each $var , $val  in $margins {
+@each $var , $val  in $sizings {
     .fs-#{$var} {
         font-size: $val;
     }

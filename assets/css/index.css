@@ -71,17 +71,20 @@ button:not(:disabled),
   margin-right: 1rem;
   margin-left: 1rem; }
 
+.fs-icon-size {
+  font-size: 4em; }
+
 .fs-xtra-large {
-  font-size: 3rem; }
+  font-size: 3em; }
 
 .fs-large {
-  font-size: 2rem; }
+  font-size: 2em; }
 
 .fs-small {
-  font-size: 1.5rem; }
+  font-size: 1.5em; }
 
 .fs-xtra-small {
-  font-size: 1rem; }
+  font-size: 1em; }
 
 /* End Maps*/
 /*Mixins*/
@@ -357,37 +360,45 @@ footer {
 
 /****** End modules modules  styles ******/
 /****** Begin  implementation styles ******/
-.implementationH1 h1 {
-  font-size: 1.7em; }
+.sectionImplementation {
+  width: 70%; }
+  .sectionImplementation__headings h1 {
+    font-size: 2em; }
+  .sectionImplementation__headings h2 {
+    font-size: 1.5em;
+    color: #535252;
+    font-style: italic; }
+    .sectionImplementation__headings h2 span {
+      font-weight: bold; }
+  .sectionImplementation__headingsLeft, .sectionImplementation__headingsRight {
+    display: inline-block;
+    text-align: left; }
+    .sectionImplementation__headingsLeft h3, .sectionImplementation__headingsRight h3 {
+      color: orange;
+      font-size: 4em; }
+    .sectionImplementation__headingsLeft h4, .sectionImplementation__headingsRight h4 {
+      font-size: 2em;
+      font-weight: bold; }
+    .sectionImplementation__headingsLeft p, .sectionImplementation__headingsRight p {
+      font-size: 1.5em; }
+  .sectionImplementation__headingsRight {
+    text-align: right; }
+  .sectionImplementation__survey img {
+    width: 90%; }
+  .sectionImplementation__migration img {
+    width: 90%;
+    border-radius: 5px; }
+  .sectionImplementation__training img {
+    width: 80%;
+    border-radius: 5px; }
 
-.implementationH2 {
-  color: orange; }
-
-.implementationH3 {
-  color: darkgrey; }
-
-.plan img {
-  width: 70%;
-  border-radius: 5px; }
-
-.migration img {
-  width: 60%;
-  border-radius: 5px; }
-
-.survey img {
-  border-radius: 5px; }
-
-.training img {
-  width: 80%;
-  border-radius: 5px; }
+.fs-icon-size {
+  color: #99000A; }
 
 /****** End implementation  styles ******/
 /****** Begin  success styles ******/
-.successCases img {
-  width: 4rem; }
-
 .successCases h1 {
-  font-size: 1.7em; }
+  font-size: 2em; }
 
 .sectionlogos__grid {
   width: 80%; }

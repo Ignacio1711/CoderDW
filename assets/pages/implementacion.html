@@ -8,12 +8,18 @@
     <meta name="description" content="Te acompañamos en todo el proceso de implementación de SGO-Suite. Nos ocupamos de la migración y puesta a punto de tus datos. Coordinamos la actividades en forma conjunta y acorde a las necesidades de tu organización." >
     <meta name="keywords" content="IMPLEMENTACIÓN ISO, ADMINISTRAR NORMAS ISO, IMPLEMENTAR ISO 9001">
     <link rel="shortcut icon" href="/assets/image/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,100;1,400&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <title>SGO Suite | Implementación</title>
 </head>
 
@@ -22,114 +28,130 @@
         <div class="row">
             <div class="col-md-12 px-0">
                 <header class="container-fluid px-0 header">
-                    <nav class="row header__nav">
-                        <div class="col-md-6 px-0 headerContainer__logo">
+                    <nav class="row navbar navbar-expand-md header__nav">
+                        <div class="col-md-4 px-0 headerContainer__logo">
                             <a href="../../index.html">
                                 <picture>
-                                    <img src="../image/logo.png" alt="Logo Empresa">
+                                    <img src="../../assets/image/logo.png" alt="Logo Empresa">
                                 </picture>
                             </a>
                         </div>
+                        <div class="col-md-2 px-0  headerContainer__menu">
+                            <!-- Toggler/collapsibe Button -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#collapsibleNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
                         <div class="col-md-6 px-0  headerContainer__menu">
-                            <ul class="">
-                                <li class=""> <a href="modulos.html">Módulos</a></li>
-                                <li class=""><a href="implementacion.html">Implementación</a>
-                                </li>
-                                <li class=""><a href="exito.html">Casos de Éxito</a></li>
-                                <li class=""><a href="contacto.html">Contacto</a></li>
-                                <li class="">
-                                    <input type="button" value="Obtén una demo" class="btnAction">
-                                </li>
-                            </ul>
+                            <!-- Navbar links -->
+                            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a href="modulos.html">Módulos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="implementacion.html">Implementación</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="exito.html">Casos de Éxito</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="contacto.html">Contacto</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <input type="button" value="Obtén una demo" class="btnAction">
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </nav>
                 </header>
             </div>
         </div>
-        <div class="row">
+        <div class="row mg-large">
             <div class="col-md-12">
-                <main class="container-fluid px-0 contentCenter textCenter sectionGap">
-                    <div class="row sectionGap">
-                        <div class="col-md-12 textCenter implementationH1">
+                <main class="container-fluid px-0  sectionImplementation contentCenter textCenter ">
+                    <div class="row mg-large">
+                        <div class="col-md-12 sectionImplementation__headings  textCenter ">
                             <h1>Implementación planificada acorde a tus necesidades</h1>
+                            <h2>Te acompañamos durante todo el proceso de implementación de SGO-Suite. Cada una de las etapas las planificamos acordes a los tiempos de tu organización. </h2>
                         </div>
                     </div>
-                    <div class="row sectionGap survey">
-                        <div class="col-md-6 contentCenter">
-                            <h2 class="implementationH2">
-                                01. Relevamiento
-                            </h2>
-                            <h3 class="implementationH3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-                                repellendus
-                                exercitationem nesciunt
-                                excepturi velit ab asperiores rem, voluptas magni, quasi laborum voluptates voluptate
-                                sunt
-                                vero
-                                illum,
-                                necessitatibus tenetur est laudantium?</h3>
+                    <div class="row mg-large">
+                        <i class="bi bi-arrow-bar-down fs-icon-size"></i>
+                    </div>
+                    <div class="row sectionImplementation__survey">
+                        <div class="col-md-6 contentCenter sectionImplementation__headingsLeft">
+                            <h3>01.</h3>
+                            <h4 >
+                                Relevamiento
+                            </h4>
+                            <p>
+                                En esta primer etapa analizamos las necesidades de tu organización a fin de determinar cuál será el mejor modelo de implementación.
+                            </p>
                         </div>
-                        <div class="col-md-6 contentCenter">
+                        <div class="col-md-6 sectionImplementation__survey contentCenter">
                             <figure>
-                                <img src="../image/sgoSuite/relevamiento.png" alt="relevamiento de información">
+                                <img src="../image/sgoSuite/relevamiento2.png" alt="relevamiento de información">
                             </figure>
                         </div>
                     </div>
-                    <div class="row sectionGap plan">
-                        <div class="col-md-6 contentCenter">
+                    <div class="row mg-large">
+                        <i class="bi bi-arrow-bar-down fs-icon-size"></i>
+                    </div>
+                    <div class="row sectionImplementation__survey">
+                        <div class="col-md-6 sectionImplementation__survey contentCenter">
                             <figure>
-                                <img src="../image/sgoSuite/planificacion.png" alt="planificación de implementación">
+                                <img src="../image/sgoSuite/planificacion.png" alt="relevamiento de información">
                             </figure>
                         </div>
-                        <div class="col-md-6 contentCenter">
-                            <h2 class="implementationH2">
-                                02. Plan de implementación
-                            </h2>
-                            <h3 class="implementationH3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-                                repellendus
-                                exercitationem nesciunt
-                                excepturi velit ab asperiores rem, voluptas magni, quasi laborum voluptates voluptate
-                                sunt
-                                vero
-                                illum,
-                                necessitatibus tenetur est laudantium?</h3>
+                        <div class="col-md-6 contentCenter sectionImplementation__headingsRight">
+                            <h3>02.</h3>
+                            <h4 >
+                                Planificación
+                            </h4>
+                            <p>
+                                Establezcamos juntos los tiempos y fechas de las actividades a desarrollar. De esta forma, la implementación de SGO-Suite no afectará tus tareas diarias ni las de tu equipo de trabajo.
+                            </p>
                         </div>
                     </div>
-                    <div class="row sectionGap migration">
-                        <div class="col-md-6 contentCenter">
-                            <h2 class="implementationH2">
-                                03. Migración
-                            </h2>
-                            <h3 class="implementationH3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-                                repellendus
-                                exercitationem nesciunt
-                                excepturi velit ab asperiores rem, voluptas magni, quasi laborum voluptates voluptate
-                                sunt
-                                vero
-                                illum,
-                                necessitatibus tenetur est laudantium?</h3>
+                    <div class="row mg-large ">
+                        <i class="bi bi-arrow-bar-down fs-icon-size"></i>
+                    </div>
+                    <div class="row sectionImplementation__survey">
+                        <div class="col-md-6 contentCenter sectionImplementation__headingsLeft">
+                            <h3>03.</h3>
+                            <h4 >
+                                Migración de información
+                            </h4>
+                            <p>
+                                Mientras inicias las tareas de implementación nosotros nos ocupamos de migrar la información de tu antiguo <span>Sistema de Gestión</span>. Al iniciar con la implementación de cada módulo encontrarás tu información histórica disponible.
+                            </p>
                         </div>
-                        <div class="col-md-6 contentCenter">
+                        <div class="col-md-6 sectionImplementation__migration contentCenter">
                             <figure>
-                                <img src="../image/sgoSuite/migration.png" alt="migración de datos">
+                                <img src="../image/sgoSuite/migration.png" alt="Imagen de migración de información">
                             </figure>
                         </div>
                     </div>
-                    <div class="row sectionGap training">
-                        <div class="col-md-6 contentCenter">
+                    <div class="row mg-large">
+                        <i class="bi bi-arrow-bar-down fs-icon-size"></i>
+                    </div>
+                    <div class="row sectionImplementation__survey">
+                        <div class="col-md-6 sectionImplementation__training contentCenter">
                             <figure>
-                                <img src="../image/sgoSuite/training.png" alt="migración de datos">
+                                <img src="../image/sgoSuite/training.png" alt="relevamiento de información">
                             </figure>
                         </div>
-                        <div class="col-md-6 contentCenter">
-                            <h2 class="implementationH2">
-                                04. Capacitación a usuarios
-                            </h2>
-                            <h3 class="implementationH3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-                                repellendus exercitationem nesciunt
-                                excepturi velit ab asperiores rem, voluptas magni, quasi laborum voluptates voluptate sunt
-                                vero
-                                illum,
-                                necessitatibus tenetur est laudantium?</h3>
+                        <div class="col-md-6 contentCenter sectionImplementation__headingsRight">
+                            <h3>04.</h3>
+                            <h4 >
+                                Capacitación y puesta en marcha
+                            </h4>
+                            <p>
+                                En esta etapa nos ocupamos de lo más importante, las personas. Mediante nuestras clases online y tutoriales, capacitamos a los usuarios de SGO-Suite para que puedan dar el mejor uso al sistema. Nos enfocamos en promover la cultura de registro en el sistema de gestión.
+                            </p>
                         </div>
                     </div>
                 </main>

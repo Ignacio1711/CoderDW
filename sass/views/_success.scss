@@ -1,11 +1,9 @@
 /****** Begin  success styles ******/
 
 .successCases{
-    &  img {
-        width: 4rem;
-    }
+    
     & h1 {
-        font-size: 1.7em;
+        font-size:  map-get($sizings, large )
     }
 }
 

@@ -1,36 +1,64 @@
 /****** Begin  implementation styles ******/
 
-.implementation{
-    &H1 h1 {
-        font-size: 1.7em;
-    }
-    &H2 {
-        color: orange;
-    }
-    &H3 {
-        color: darkgrey;
-    }
-
-}
-
-.plan img {
+.sectionImplementation{
     width: 70%;
-    border-radius: 5px;
+    &__headings{
+        h1{
+            font-size: map-get($sizings, large );
+        }
+        h2 {
+            font-size: map-get($sizings, small );
+            color: rgb(83, 82, 82);
+            font-style: italic;
+            span {
+                font-weight: bold;
+            }
+        }
+        &Left{
+            display: inline-block;
+            text-align: left;
+            
+            h3 {
+                color: orange;
+                font-size: map-get($sizings, icon-size );
+            }
+            h4{
+                font-size: map-get($sizings, large );
+                font-weight: bold;
+            }
+            p{
+                font-size: map-get($sizings, small );
+                
+            }
+        }
+        &Right {
+            @extend .sectionImplementation__headingsLeft;
+            text-align: right;
+        }
+    }
+    
+    &__survey{
+        img{
+            width: 90%;
+        }
+    }
+    &__migration{
+        img{
+            width: 90%;
+            border-radius: 5px;
+        }
+    }
+    &__training{
+        img{
+            width: 80%;
+            border-radius: 5px;
+        }
+    }
+    
 }
 
-.migration img {
-    width: 60%;
-    border-radius: 5px;
-}
-
-.survey img {
-
-    border-radius: 5px;
-}
-
-.training img {
-    width: 80%;
-    border-radius: 5px;
+.fs-icon-size{
+    color: map-get($colors, bordo-hexa);
 }
 
 /****** End implementation  styles ******/

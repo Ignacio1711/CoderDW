@@ -8,12 +8,18 @@
     <meta name="description" content="El equipo de SGO-Suite está siempre disponible para responder tus consultas. Ponte en contacto. Hablemos." >
     <meta name="keywords" content="CONTRATAR  SOFTWARE DE CALIDAD, SOFTWARE ISO CONSULTAS">
     <link rel="shortcut icon" href="/assets/image/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,100;1,400&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <title>SGO Suite | Contacto</title>
 </head>
 
@@ -22,25 +28,42 @@
         <div class="row">
             <div class="col-md-12 px-0">
                 <header class="container-fluid px-0 header">
-                    <nav class="row header__nav">
-                        <div class="col-md-6 px-0 headerContainer__logo">
+                    <nav class="row navbar navbar-expand-md header__nav">
+                        <div class="col-md-4 px-0 headerContainer__logo">
                             <a href="../../index.html">
                                 <picture>
-                                    <img src="../image/logo.png" alt="Logo Empresa">
+                                    <img src="../../assets/image/logo.png" alt="Logo Empresa">
                                 </picture>
                             </a>
                         </div>
+                        <div class="col-md-2 px-0  headerContainer__menu">
+                            <!-- Toggler/collapsibe Button -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#collapsibleNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
                         <div class="col-md-6 px-0  headerContainer__menu">
-                            <ul class="">
-                                <li class=""> <a href="modulos.html">Módulos</a></li>
-                                <li class=""><a href="implementacion.html">Implementación</a>
-                                </li>
-                                <li class=""><a href="exito.html">Casos de Éxito</a></li>
-                                <li class=""><a href="contacto.html">Contacto</a></li>
-                                <li class="">
-                                    <input type="button" value="Obtén una demo" class="btnAction">
-                                </li>
-                            </ul>
+                            <!-- Navbar links -->
+                            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a href="modulos.html">Módulos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="implementacion.html">Implementación</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="exito.html">Casos de Éxito</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="contacto.html">Contacto</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <input type="button" value="Obtén una demo" class="btnAction">
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </nav>
                 </header>
