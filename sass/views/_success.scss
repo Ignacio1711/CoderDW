@@ -31,10 +31,16 @@
     width: 80%;
     img {
         width: 8rem;
-        filter: grayscale(1);
-        
     }
  }
+
+ @media (max-width: 769px) {
+    .sectionlogos__grid {
+        img {
+            width: 5rem;
+        }
+     }
+    }
 
 
 /****** End success  styles ******/

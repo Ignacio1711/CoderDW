@@ -419,8 +419,11 @@ footer {
 .sectionlogos__grid {
   width: 80%; }
   .sectionlogos__grid img {
-    width: 8rem;
-    filter: grayscale(1); }
+    width: 8rem; }
+
+@media (max-width: 769px) {
+  .sectionlogos__grid img {
+    width: 5rem; } }
 
 /****** End success  styles ******/
 /****** Begin  contact styles ******/
