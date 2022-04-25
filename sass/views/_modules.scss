@@ -18,8 +18,13 @@
     }
     &__card {
         box-shadow: 4px 4px 8px #cacaca, -4px -4px 8px white ;
+        border-radius: 10px;
+        padding: map-get($spacings, small );
          h4 {
-            font-size: map-get($sizings, xtra-small);
+            font-size: 1.2em;
+            color: map-get($colors, bordo-hexa );
+            font-weight: bold;
+            text-align: left;
         }
         p {
             width: 80%;

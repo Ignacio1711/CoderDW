@@ -5,21 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
     <meta name="description" content="El equipo de SGO-Suite está siempre disponible para responder tus consultas. Ponte en contacto. Hablemos." >
     <meta name="keywords" content="CONTRATAR  SOFTWARE DE CALIDAD, SOFTWARE ISO CONSULTAS">
+
+    <!-- FavIcon -->
     <link rel="shortcut icon" href="/assets/image/favicon.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,100;1,400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+<!-- NavBar Scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Styles-->
     <link rel="stylesheet" href="../css/index.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
     <title>SGO Suite | Contacto</title>
 </head>
 
@@ -69,25 +79,41 @@
                 </header>
             </div>
         </div>
-        <div class="row">
-            <main class="col-md-12 textCenter sectionGap contactHeading">
-                <h5 class="contactHeading">¿Tienes alguna pregunta?</h5>
-                    <h1>Contáctate con nosotros</h1>
-                    <h5 class="contactHeading">Estamos para contestar cualquier duda que puedas tener</h5>
-                </section>
-                <section id="formulario" class="contentCenter sectionGap">
-                    <div class="contactForm ">
-                        <form action="" method="" enctype="">
-                            <input type="text" name="" id="" placeholder="Nombre">
-                            <input type="text" name="" id="" placeholder="Apellido">
-                            <input type="email" name="" id="" placeholder="Email">
-                            <textarea name="message" id="" cols="30" rows="20" placeholder="Mensaje"></textarea>
-                            <input type="submit" value="Enviar" class="btnAction">
-                        </form>
-                    </div>
-            </main>
-        </div>
-      
+        <main class="row container-fluid px-0 contentCenterV mg-xtra-large">
+            <section class="col-md-6 textCenter contactDescription">
+                <h5 class="contactDescription__heading">¿Tienes alguna pregunta?</h5>
+                <h1>Contáctate con nuestro equipo de ventas</h1>
+                <p class="mg-large">Envíanos tu consulta y con gusto nos comunicaremos para asesorarte en todas las características de SGO-Suite.</p>
+            </section>
+            <section id="formulario" class="col-md-6 contentCenter mg-xtra-large">
+                <div class="contactForm ">
+                    <form action="" method="" enctype="">
+                        <label for="usrName" >Nombre</label>
+                        <input type="text" class="formInput" name="" id="usrName" placeholder="Ingresa tu nombre">
+                        <label for="usrApellido" >Apellido</label>
+                        <input type="text" class="formInput" name="" id="usrApellido" placeholder="Ingresa tu apellido">
+                        <label for="usrEmail" >Email de trabajo</label>
+                         <input type="email" class="formInput" name="" id="usrEmail" placeholder="mail@empresa.com">
+                         <label for="usrTelefono" >Teléfono <span>(Opcional)</span></label>
+                         <input type="email"class="formInput" name="" id="usrTelefono" placeholder="(área) número">
+                         <label for="usrCargo" >Cargo</label>
+                         <input list="cargos" class="formInput" name="" id="usrCargo" placeholder="Selecciona un cargo" />
+                            <datalist id="cargos">
+                                <option value="Director">
+                                <option value="Gerente">
+                                <option value="Product Manager">
+                                <option value="Responsable de calidad">
+                                <option value="Responsable de IT">
+                                <option value="Project Manager">
+                            </datalist>
+                        <label for="usrmessage" >Mensaje</label>
+                        <textarea name="message" id="usrmessage" cols="15" rows="5" placeholder="Ingresa tu mensaje"></textarea>
+                        <input type="submit" value="Enviar" class="formInput__Submit">
+                    </form>
+                </div>
+            </section>
+        </main>
+
         <div class="row">
             <div class="col-md-12 px-0">
                 <footer class="container-fluid">
@@ -105,22 +131,10 @@
                         <div class="col-md-4 textCenter contentCenter">
                             <h3>Seguinos</h3>
                             <div class="SocialContainer__logos">
-                                <figure>
-                                    <a href="https://linkedin.com"><img src="../image/social/linkedin.jpg"
-                                            alt="linkedin" height="36px" width="36px"></a>
-                                </figure>
-                                <figure>
-                                    <a href="https://facebook.com"><img src="../image/social/facebook.jpg"
-                                            alt="facebook" height="36px" width="36px"></a>
-                                </figure>
-                                <figure>
-                                    <a href="https://twitter.com"><img src="../image/social/twitter.png" alt="twitter"
-                                            height="36px" width="36px"></a>
-                                </figure>
-                                <figure>
-                                    <a href="https://youtube.com"><img src="../image/social/youtube.png" alt="youtube"
-                                            height="36px" width="36px"></a>
-                                </figure>
+                                <a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                <a href="https://facebook.com" target="_blank"> <i class="bi bi-facebook"></i></a>
+                                <a href="https://twitter.com" target="_blank"> <i class="bi bi-twitter"></i> </a>
+                                <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
                             </div>
                         </div>
                         <div class="col-md-4 newsContainer textCenter contentCenter">
@@ -129,7 +143,7 @@
                             <form action="" class="">
                                 <input type="text" placeholder="Nombre y apellido">
                                 <input type="email" placeholder="Email">
-                                <input type="submit" value="Suscribirse" class="btnAction">
+                                <input type="submit" value="Suscribirse" class="submit">
                             </form>
                         </div>
                     </div>
@@ -147,6 +161,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+    <a href="#top" id="myBtn" style="color: rgb(255, 255, 255)">^</a>
 </body>
 
 </html>

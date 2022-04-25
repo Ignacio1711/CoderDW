@@ -1,26 +1,58 @@
 /****** Begin  contact styles ******/
 
-.contactHeading {
-    color: coral;
+.contactDescription{
+    width: 30rem;
+    &__heading{
+        color: coral;
     font-weight: bold;
     h1 {
         color: black;
         font-size: 1.7em;
         }
+    }
 }
 
 .contactForm form {
     display: flex;
     flex-direction: column;
-    border: 1px solid coral;
+    padding: map-get($spacings, large);
+    width: 25rem;
+    border: 0.5px solid lightgray;
     border-radius: 5px;
-    input {
-    margin: 10px;
-    }
-    textarea {
-        margin: 10px;
-        height: 12rem;
+    box-shadow: 16px 16px 38px #cacaca,
+            -16px -16px 38px #f6f6f6;
+        textarea {
+            padding: map-get($spacings, xtra-small);;
+            border: 0.5px solid lightgray;
+            border-radius: 5px;
+            margin-bottom: map-get($margins, small );
+        }
+        label{
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        span{
+            color: grey;
+        }
+}
+
+.formInput {
+    padding: map-get($spacings, xtra-small);
+    border: 0.5px solid lightgray;
+    border-radius: 5px;
+    margin-bottom: map-get($margins, xtra-small );
+    &__Submit{
+        background-color: map-get($colors, naranja-hexa );
+        border-radius: 30px;
+        font-weight: bold;
+        color: white;
+        border: none;
+        padding: map-get($spacings, xtra-small);
+        &:hover {
+            background-color: map-get($colors, bordo-hexa );
+        }
     }
 }
+
 
 /****** End contact  styles ******/

@@ -1,7 +1,8 @@
 /****** Begin  footer  section styles ******/
 
 footer {
-    background: linear-gradient( #070707, #646262);
+    padding-top: map-get($spacings, xtra-small );
+    background-color: rgb(36, 36, 36);
     color: white;
 }
 
@@ -9,14 +10,15 @@ footer {
     height: 50px;
 }
 
-
 .SocialContainer{
     &__logos {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-        figure {
-            margin-right: 1rem;
+        i{
+            font-size: map-get($sizings , large );
+            color: map-get($colors, naranja-hexa);
+            padding: map-get($spacings, xtra-small );
         }
     }
     h3 {
@@ -29,6 +31,10 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    input {
+        margin-bottom: map-get($margins, xtra-small);
+        padding: 5px;
+    }
 }
 
 .legalContainer a {

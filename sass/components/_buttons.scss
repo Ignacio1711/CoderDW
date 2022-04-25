@@ -2,13 +2,14 @@
 .btnAction {
     background-color: grey;
     color: white;
-    border: 1px solid orange;
-    border-radius: 5px;
+    border-radius: 15px;
+    border:none;
     padding: 5px;
-    box-shadow: 1px 1px darkgray;
     transition: background-color;
     &:hover {
-        background-color: darkgray;
+        background-color: map-get($colors, naranja-hexa );
+            color: white;
+            border-color:map-get($colors, naranja-hexa );
     }
    &__hero {
         background: transparent;
@@ -20,12 +21,47 @@
         border: 1px solid white;
         border-radius: 15px;
         padding: 5px;
-        box-shadow: 1px 1px darkgray;
         transition: background-color;
         &:hover{
-            background-color: darkgray;
+            background-color: map-get($colors, naranja-hexa );
             color: white;
+            border-color:map-get($colors, naranja-hexa );
         }
     }
 }
 
+.submit{
+    background-color: map-get($colors, naranja-hexa );
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding: map-get($spacings, xtra-small);
+    &:hover {
+        background-color: map-get($colors, bordo-hexa );
+    }
+}
+
+/*Botón back to top*/
+#myBtn {
+    position: fixed;
+    bottom: 0.5px;
+    float: right;
+    right: 4%;
+    left: 96%;
+    max-width: 3rem;
+    height: 3rem;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    border-color: map-get($colors, naranja-hexa );
+    background-color:map-get($colors, naranja-hexa );
+    padding: .5px;
+    border-radius: 5px;
+    &:hover{
+        background-color: map-get($colors, bordo-hexa );
+    }
+}
